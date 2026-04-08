@@ -9,11 +9,11 @@ const AppProviders = ({ children }) => {
 
     // navbar categories
     const navLinks = [
-        "Backgrounds",
-        "Mockups",
-        "Typography",
-        "Branding",
-        "Abstract",
+        { name: "Backgrounds", path: "/backgrounds" },
+        { name: "Mockups", path: "/mockups" },
+        { name: "Typography", path: "/typography" },
+        { name: "Branding", path: "/branding" },
+        { name: "Abstract", path: "/abstract" },
     ];
 
     // categories

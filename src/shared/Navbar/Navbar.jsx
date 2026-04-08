@@ -12,7 +12,7 @@ const Navbar = () => {
                 <h2 className='text-[20px] font-medium dm-serif'>Creative<span>w</span>ork</h2>
                 <ul className='flex gap-6 md:gap-4 lg:gap-6 items-center'>
                     {
-                        navLinks.map(li => <li key={li}><NavLink className={`dm-sans text-sm text-[#91877d] hover:text-gray-700 transition-all font-medium`}>{li}</NavLink></li>)
+                        navLinks.map(nav => <li key={nav.name}><NavLink to={nav.path} className={`dm-sans text-sm text-[#91877d] hover:text-gray-700 transition-all font-medium`}>{nav.name}</NavLink></li>)
                     }
                 </ul>
                 <div>
