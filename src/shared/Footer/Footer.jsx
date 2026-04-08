@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row justify-between gap-6 md:gap-4 lg:gap-7'>
                     <div className=' space-y-2'>
                         <h2 className="text-lg font-normal text-[#2a2622] dm-serif">
-                            Creative<span>w</span>ork
+                            .Creative<span>d</span>esign
                         </h2>
                         <p className="dm-sans text-sm text-[#91877d] font-medium">Curated design resources, aesthetic backgrounds, and premium mockups for creators.
 
