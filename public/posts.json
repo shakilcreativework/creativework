@@ -1,0 +1,212 @@
+
+
+
+
+
+[
+    {
+        "id": "1",
+        "slug": "minimal-geometric-shapes",
+        "title": "Minimal Geometric Shapes Collection",
+        "description": "A beautifully curated set of minimal geometric shapes in warm terracotta and beige tones. Perfect for social media posts, website headers, and print designs.",
+        "category": "Abstract",
+        "image": "https://i.ibb.co.com/b8Td8v8/sample-1.jpg",
+        "imageHeight": 1200,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "geometric",
+            "minimal",
+            "abstract",
+            "shapes"
+        ]
+    },
+    {
+        "id": "2",
+        "slug": "elegant-product-mockup",
+        "title": "Elegant Product Mockup on Beige",
+        "description": "Premium product photography mockup featuring soft shadows and warm lighting on a clean beige surface. Ideal for cosmetics and skincare brands.",
+        "category": "Mockups",
+        "image": "https://i.ibb.co.com/qYMjCQ46/sample-2.jpg",
+        "imageHeight": 800,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "mockup",
+            "product",
+            "branding",
+            "packaging"
+        ]
+    },
+    {
+        "id": "3",
+        "slug": "watercolor-abstract-art",
+        "title": "Watercolor Abstract Art Print",
+        "description": "Dreamy watercolor abstract composition with warm coral and neutral tones. Perfect for wall art, prints, and digital design projects.",
+        "category": "Abstract",
+        "image": "https://i.ibb.co.com/jksX5CKf/sample-3.jpg",
+        "imageHeight": 1000,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "watercolor",
+            "abstract",
+            "art",
+            "warm tones"
+        ]
+    },
+    {
+        "id": "4",
+        "slug": "neutral-mood-board",
+        "title": "Neutral Tone Mood Board Flat Lay",
+        "description": "Aesthetic mood board composition with dried flowers, fabric swatches, and neutral stationery. Perfect for interior design and branding inspiration.",
+        "category": "Branding",
+        "image": "https://i.ibb.co.com/49LPn0w/sample-4.jpg",
+        "imageHeight": 600,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "mood board",
+            "neutral",
+            "branding",
+            "flat lay"
+        ]
+    },
+    {
+        "id": "5",
+        "slug": "modern-typography-poster",
+        "title": "Modern Typography Poster Design",
+        "description": "Clean and bold typography poster with a minimalist beige background. Great for editorial layouts, social media content, and design portfolios.",
+        "category": "Typography",
+        "image": "https://i.ibb.co.com/Mx4DyyM2/sample-5.jpg",
+        "imageHeight": 1100,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "typography",
+            "poster",
+            "minimal",
+            "editorial"
+        ]
+    },
+    {
+        "id": "6",
+        "slug": "wax-seal-stationery",
+        "title": "Premium Wax Seal Stationery Set",
+        "description": "Luxurious stationery flat lay featuring wax seals, kraft envelopes, and dried botanicals. Ideal for wedding brands and luxury packaging design.",
+        "category": "Branding",
+        "image": "https://i.ibb.co.com/5hYH5dBy/sample-6.jpg",
+        "imageHeight": 900,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "stationery",
+            "wax seal",
+            "premium",
+            "luxury"
+        ]
+    },
+    {
+        "id": "1",
+        "slug": "minimal-geometric-shapes",
+        "title": "Minimal Geometric Shapes Collection",
+        "description": "A beautifully curated set of minimal geometric shapes in warm terracotta and beige tones. Perfect for social media posts, website headers, and print designs.",
+        "category": "Abstract",
+        "image": "https://i.ibb.co.com/b8Td8v8/sample-1.jpg",
+        "imageHeight": 1200,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "geometric",
+            "minimal",
+            "abstract",
+            "shapes"
+        ]
+    },
+    {
+        "id": "2",
+        "slug": "elegant-product-mockup",
+        "title": "Elegant Product Mockup on Beige",
+        "description": "Premium product photography mockup featuring soft shadows and warm lighting on a clean beige surface. Ideal for cosmetics and skincare brands.",
+        "category": "Mockups",
+        "image": "https://i.ibb.co.com/qYMjCQ46/sample-2.jpg",
+        "imageHeight": 800,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "mockup",
+            "product",
+            "branding",
+            "packaging"
+        ]
+    },
+    {
+        "id": "3",
+        "slug": "watercolor-abstract-art",
+        "title": "Watercolor Abstract Art Print",
+        "description": "Dreamy watercolor abstract composition with warm coral and neutral tones. Perfect for wall art, prints, and digital design projects.",
+        "category": "Abstract",
+        "image": "https://i.ibb.co.com/jksX5CKf/sample-3.jpg",
+        "imageHeight": 1000,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "watercolor",
+            "abstract",
+            "art",
+            "warm tones"
+        ]
+    },
+    {
+        "id": "4",
+        "slug": "neutral-mood-board",
+        "title": "Neutral Tone Mood Board Flat Lay",
+        "description": "Aesthetic mood board composition with dried flowers, fabric swatches, and neutral stationery. Perfect for interior design and branding inspiration.",
+        "category": "Branding",
+        "image": "https://i.ibb.co.com/49LPn0w/sample-4.jpg",
+        "imageHeight": 600,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "mood board",
+            "neutral",
+            "branding",
+            "flat lay"
+        ]
+    },
+    {
+        "id": "5",
+        "slug": "modern-typography-poster",
+        "title": "Modern Typography Poster Design",
+        "description": "Clean and bold typography poster with a minimalist beige background. Great for editorial layouts, social media content, and design portfolios.",
+        "category": "Typography",
+        "image": "https://i.ibb.co.com/Mx4DyyM2/sample-5.jpg",
+        "imageHeight": 1100,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "typography",
+            "poster",
+            "minimal",
+            "editorial"
+        ]
+    },
+    {
+        "id": "6",
+        "slug": "wax-seal-stationery",
+        "title": "Premium Wax Seal Stationery Set",
+        "description": "Luxurious stationery flat lay featuring wax seals, kraft envelopes, and dried botanicals. Ideal for wedding brands and luxury packaging design.",
+        "category": "Branding",
+        "image": "https://i.ibb.co.com/5hYH5dBy/sample-6.jpg",
+        "imageHeight": 900,
+        "adobeUrl": "https://stock.adobe.com",
+        "shutterstockUrl": "https://www.shutterstock.com",
+        "tags": [
+            "stationery",
+            "wax seal",
+            "premium",
+            "luxury"
+        ]
+    }
+    
+]
