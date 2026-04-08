@@ -13,6 +13,7 @@ const AppProviders = ({ children }) => {
         { name: "Mockups", path: "/mockups" },
         { name: "Typography", path: "/typography" },
         { name: "Branding", path: "/branding" },
+        { name: "Icons", path: "/icons" },
         { name: "Abstract", path: "/abstract" },
     ];
 
