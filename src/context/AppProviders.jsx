@@ -17,6 +17,12 @@ const AppProviders = ({ children }) => {
         { name: "Abstract", path: "/abstract" },
     ];
 
+    // resources
+    const resources = [
+        { name: "Adobestock", path: "https://stock.adobe.com" },
+        { name: "Shutterstock", path: "https://www.shutterstock.com/" },
+    ];
+
     // categories
     const categories = [
         "All",
@@ -33,6 +39,7 @@ const AppProviders = ({ children }) => {
         posts,
         categories,
         navLinks,
+        resources,
     };
     return (
         <AppContexts.Provider value={value}>

@@ -1,10 +1,13 @@
+import Container from "../../shared/Container/Container";
 
 
 const Home = () => {
     
     return (
         <>
-            Home
+            <Container>
+                home
+            </Container>
         </>
     );
 };

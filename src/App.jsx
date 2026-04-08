@@ -10,9 +10,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className='min-h-[calc(100vh-559px)] md:min-h-[calc(100vh-457px)]'>
+        <Outlet />
+      </div>
       <Footer />
-
       <ToastContainer />
     </div>
   )
