@@ -4,14 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import { RouterProvider } from 'react-router'
 import router from './routes/router.jsx'
-import PostsProvider from './context/posts/PostsProvider.jsx'
+import AppProviders from './context/AppProviders.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PostsProvider>
+    <AppProviders>
       <RouterProvider router={router}>
         <App />
       </RouterProvider>
-    </PostsProvider>
+    </AppProviders>
   </StrictMode>,
 )
