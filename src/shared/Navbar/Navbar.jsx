@@ -18,7 +18,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-[#faf8f5cc] sticky py-4 ">
+        <div className="bg-[#faf8f5cc] sticky py-4">
             <Container>
                 <nav className="flex justify-between items-center w-full z-50 ">
                     <h2 className="text-[20px] text-[#2a2622] font-medium dm-serif">
