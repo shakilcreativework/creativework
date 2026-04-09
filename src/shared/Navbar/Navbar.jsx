@@ -42,7 +42,7 @@ const Navbar = () => {
 
                     {/* small devices */}
                     <ul
-                        className={`absolute md:hidden w-full flex flex-col bg-[#faf8f5cc] gap-3 items-center left-0 py-6 transform transition-all duration-300 ease-in-out
+                        className={`absolute md:hidden w-full flex flex-col bg-[#faf8f5cc] gap-2 items-center left-0 py-6 transform transition-all duration-300 ease-in-out
 
                     ${open
                                 ? "top-16 opacity-100 -z-40"
