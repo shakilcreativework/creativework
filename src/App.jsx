@@ -8,9 +8,9 @@ import { ToastContainer } from 'react-toastify';
 function App() {
 
   return (
-    <div>
+    <div className='min-h-screen flex flex-col'>
       <Navbar />
-      <div className='min-h-[calc(100vh-559px)] md:min-h-[calc(100vh-457px)]'>
+      <div className='flex-1'>
         <Outlet />
       </div>
       <Footer />
