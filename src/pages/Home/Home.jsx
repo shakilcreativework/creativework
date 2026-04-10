@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <Container>
-                home
+                <p className="text-[#8A8178]"><small>copyright</small></p>
             </Container>
         </>
     );

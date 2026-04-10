@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import AppContexts from "../../context/AppContexts";
-import { NavLink } from "react-router"; // fixed import
+import { NavLink } from "react-router";
 import { GrSearch } from "react-icons/gr";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
@@ -8,74 +8,85 @@ import Container from "../Container/Container";
 
 const Navbar = () => {
     const { navLinks } = useContext(AppContexts);
-    // toggle menu
     const [open, setOpen] = useState(false);
 
-    // const handle menu icon click
     const handleMenu = () => {
         setOpen(!open);
-        console.log(open)
     };
 
     return (
-        <div className="bg-[#faf8f5cc] sticky py-4">
-            <Container>
-                <nav className="flex justify-between items-center w-full z-50 ">
-                    <h2 className="text-[20px] text-[#2a2622] font-medium dm-serif">
-                        .Creative<span>d</span>esign
-                    </h2>
-                    {/* large devices */}
-                    <ul
-                        className="hidden md:flex md:flex-row gap-4 lg:gap-6 items-center"
-                    >
-                        {navLinks.map((nav) => (
-                            <li key={nav.name}>
-                                <NavLink
-                                    to={nav.path}
-                                    className="dm-sans text-sm text-[#91877d] hover:text-gray-700 transition-all font-medium"
-                                >
-                                    {nav.name}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
+        // ✅ CHANGE 1
+        <div className="bg-[#FAF8F5CC] backdrop-blur-md sticky top-0 py-4 z-50">
+            {/* ✅ CHANGE 2 */}
+            <nav className="relative">
+                <Container>
+                    <div className="flex justify-between items-center w-full">
 
-                    {/* small devices */}
-                    <ul
-                        className={`absolute md:hidden w-full flex flex-col bg-[#faf8f5cc] gap-2 items-center left-0 py-6 transform transition-all duration-300 ease-in-out
+                        {/* Logo */}
+                        <h2 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
+                            .Creative<span>d</span>esign
+                        </h2>
 
-                    ${open
-                                ? "top-16 opacity-100 -z-40"
-                                : "-top-60 opacity-0 -z-40"
-                            }`}
-                    >
-                        {navLinks.map((nav) => (
-                            <li key={nav.name}>
-                                <NavLink
-                                    to={nav.path}
-                                    className="dm-sans text-sm text-[#91877d] hover:text-gray-700 transition-all font-medium"
-                                >
-                                    {nav.name}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
+                        {/* Desktop Menu */}
+                        <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
+                            {navLinks.map((nav) => (
+                                <li key={nav.name}>
+                                    <NavLink
+                                        to={nav.path}
+                                        className="dm-sans text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
+                                    >
+                                        {nav.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
 
-                    <div className="flex items-center gap-4">
-                        <div className="rounded-full hover:bg-white text-[#91877d] hover:text-gray-700 transition-all p-2">
-                            <GrSearch className="dm-sans text-lg font-medium" />
-                        </div>
-                        <div onClick={() => { handleMenu() }} className="block md:hidden rounded-full hover:bg-white text-[#91877d] hover:text-gray-700 transition-all p-2">
-                            {
-                                open ?
-                                    <IoClose className="dm-sans text-xl font-medium" />
-                                    :
-                                    <AiOutlineMenu className="dm-sans text-xl font-medium" />
-                            }
+                        {/* Mobile Menu */}
+                        {/* ✅ CHANGE 3 (BIG FIX) */}
+                        <ul
+                            className={`absolute md:hidden w-full left-0 top-full bg-[#FAF8F5] backdrop-blur-lg py-6 flex flex-col
+                        transform transition-all duration-300 ease-in-out
+
+                        ${open
+                                    ? "translate-y-3 opacity-100"
+                                    : "-translate-y-4 opacity-0 pointer-events-none"
+                                }`}
+                        >
+                            {navLinks.map((nav) => (
+                                // ✅ CHANGE 4
+                                <li key={nav.name} className="w-full text-left px-6 py-2">
+                                    <NavLink
+                                        to={nav.path}
+                                        onClick={() => setOpen(false)}
+                                        className="block dm-sans text-sm text-[#91877d] hover:text-gray-700 transition-all font-medium"
+                                    >
+                                        {nav.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
+
+                        {/* Icons */}
+                        <div className="flex items-center gap-4">
+                            <div className="rounded-full hover:bg-white text-[#6F665C] active:text-[#E07A5F] hover:text-[#E07A5F] transition-all p-2">
+                                <GrSearch className="text-lg" />
+                            </div>
+
+                            <div
+                                onClick={handleMenu}
+                                className="block md:hidden rounded-full hover:bg-white text-[#1F1B16] active:text-[#E07A5F] hover:text-[#E07A5F] transition-all p-2"
+                            >
+                                {open ? (
+                                    <IoClose className="text-xl" />
+                                ) : (
+                                    <AiOutlineMenu className="text-xl" />
+                                )}
+                            </div>
                         </div>
                     </div>
-                </nav>
-            </Container>
+
+                </Container>
+            </nav>
         </div>
     );
 };
