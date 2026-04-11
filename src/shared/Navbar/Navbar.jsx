@@ -31,7 +31,7 @@ const Navbar = () => {
 
                             <div className="flex items-center dm-sans">
                                 <Shark className="w-10 text-green-300" />
-                                <span className="-ml-1 text-[20px] text-[#1F1B16] font-medium dm-serif">reativedesign</span>
+                                <span className="-ml-1 text-xl text-[#1F1B16] font-medium dm-serif">reativedesign</span>
                             </div>
                         </Link>
 
