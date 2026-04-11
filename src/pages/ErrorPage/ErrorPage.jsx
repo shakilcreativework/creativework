@@ -2,50 +2,77 @@ import React from 'react';
 import { Link } from 'react-router';
 import Navbar from '../../shared/Navbar/Navbar';
 import Footer from '../../shared/Footer/Footer';
+import Container from '../../shared/Container/Container';
+import Panda from '../../components/Logo/Panda';
 
 const ErrorPage = () => {
     return (
-        <div>
+        <div className="min-h-dvh flex flex-col">
+
             <Navbar />
-            <div className="min-h-screen flex items-center justify-center text-[#6F665C] bg-[#FAF8F5CC] px-6">
-                <div className="text-center max-w-lg">
 
-                    {/* Error Code */}
-                    <h1 className="text-8xl font-extrabold text-indigo-500 drop-shadow-lg">
-                        404
-                    </h1>
+            <div className='flex-1 bg-[#FAF8F5] py-5'>
 
-                    {/* Title */}
-                    <h2 className="text-3xl font-semibold mt-4 dm-sans text-[#1F1B16]">
-                        Oops! Page not found
-                    </h2>
+                <Container>
+                    <div className="flex items-center justify-center px-6">
+                        <div className="text-center">
 
-                    {/* Description */}
-                    <p className="text-gray-400 mt-3">
-                        The page you're looking for doesn’t exist or has been moved.
-                    </p>
+                            {/* Error Code */}
+                            <h1 className="text-8xl font-extrabold btn-c dm-sans">
+                                404
+                            </h1>
 
-                    {/* Button */}
-                    <div className="mt-6">
-                        <Link
-                            to="/"
-                            className="px-6 py-3 transition rounded-md shadow-lg dm-serif hover:bg-[#FAF8F5CC]"
-                        >
-                            Go Home
-                        </Link>
+                            {/* Title */}
+                            <h2 className="text-3xl font-semibold mt-4 text-[#1F1B16] dm-sans">
+                                Oops! Page not found
+                            </h2>
+
+                            {/* Description */}
+                            <p className="text-[#6F665C] mt-3">
+                                The page you're looking for doesn’t exist or has been moved.
+                            </p>
+
+                            {/* Button */}
+                            <div className="mt-6">
+                                <Link
+                                    to="/"
+                                    className="
+                                inline-flex items-center justify-center
+                                px-7 py-3
+                                bg-[#E07A5F] text-white
+                                rounded-full
+                                shadow-md
+                                hover:bg-[#C9654C]
+                                hover:shadow-lg
+                                hover:scale-105
+                                active:scale-95
+                                transition-all duration-200
+                                tracking-wide
+                                font-medium
+                                dm-sans
+                                "
+                                >
+                                    Go Home
+                                </Link>
+                            </div>
+
+                            {/* Illustration */}
+                            <div className="mt-10">
+                                {/* <img
+                                    src="https://i.ibb.co.com/wrQmyYPT/alert.png"
+                                    alt="Error illustration"
+                                    className="w-full max-w-xs mx-auto opacity-80"
+                                /> */}
+                                <Panda className="text-[#E07A5F]" />
+                            </div>
+
+                        </div>
                     </div>
-
-                    {/* Optional Illustration */}
-                    <div className="mt-10">
-                        <img
-                            src="https://i.ibb.co.com/wrQmyYPT/alert.png"
-                            alt="Error illustration"
-                            className="w-full max-w-xs mx-auto opacity-80"
-                        />
-                    </div>
-                </div>
+                </Container>
             </div>
+
             <Footer />
+
         </div>
     );
 };

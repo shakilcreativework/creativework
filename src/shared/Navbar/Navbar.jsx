@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         // ✅ CHANGE 1
-        <div className="bg-[#FAF8F5CC] backdrop-blur-md sticky top-0 py-4 z-50">
+        <div className="bg-[#FAF8F5CC] backdrop-blur-md sticky top-0 py-4 z-50 shadow-xs">
             {/* ✅ CHANGE 2 */}
             <nav className="relative">
                 <Container>
@@ -52,11 +52,11 @@ const Navbar = () => {
                         {/* Mobile Menu */}
                         {/* ✅ CHANGE 3 (BIG FIX) */}
                         <ul
-                            className={`absolute md:hidden w-full left-0 top-full bg-[#FAF8F5] backdrop-blur-lg py-6 flex flex-col
+                            className={`absolute md:hidden w-full left-0 top-full bg-[#FAF8F5] py-6 flex flex-col
                         transform transition-all duration-300 ease-in-out
 
                         ${open
-                                    ? "translate-y-3 opacity-100"
+                                    ? "translate-y-3.5 opacity-100"
                                     : "-translate-y-4 opacity-0 pointer-events-none"
                                 }`}
                         >

@@ -12,12 +12,41 @@
 
 .dm-serif {
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
 .dm-serif-italic {
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
   font-style: italic;
 }
+
+/* template colors */
+.bg-c {
+  background-color: #FAF8F5;
+}
+
+.heading-c {
+  color: #1F1B16;
+}
+
+.para-c {
+  color: #6F665C;
+}
+
+.btn-bg {
+  background-color: #E07A5F;
+}
+
+.btn-c {
+  color: #E07A5F;
+}
+
+
+/* | Purpose    | Class                             |
+| ---------- | --------------------------------- |
+| Background | `bg-[#FAF8F5]`                    |
+| Heading    | `text-[#1F1B16]`                  |
+| Text       | `text-[#6F665C]`                  |
+| Accent     | `text-[#E07A5F]`                  |
+| Button     | `bg-[#E07A5F] hover:bg-[#C9654C]` | */

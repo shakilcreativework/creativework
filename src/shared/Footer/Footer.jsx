@@ -9,7 +9,7 @@ const Footer = () => {
     // console.log(resources);
 
     return (
-        <div className='bg-[#FAF8F5] pt-10 pb-5'>
+        <div className='bg-[#F3EEE8] pt-10 pb-5'>
             <Container>
                 <div className='flex flex-col md:flex-row justify-between gap-6 md:gap-4 lg:gap-7'>
                     <div className=' space-y-2'>
@@ -33,7 +33,7 @@ const Footer = () => {
                                 Explore
                             </h4>
                             <ul
-                                className={`flex flex-col bg-[#faf8f5cc] gap-1`}
+                                className={`flex flex-col gap-1`}
                             >
                                 {navLinks.map((nav) => (
                                     <li key={nav.name}>
@@ -52,7 +52,7 @@ const Footer = () => {
                                 Resources
                             </h4>
                             <ul
-                                className={`flex flex-col bg-[#faf8f5cc] gap-1`}
+                                className={`flex flex-col gap-1`}
                             >
                                 {resources.map((nav) => (
                                     <li key={nav.name}>
