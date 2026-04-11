@@ -80,15 +80,31 @@ const Navbar = () => {
                                 <GrSearch className="text-lg" />
                             </div>
 
-                            <div
+                            {/* <div
                                 onClick={handleMenu}
                                 className="block md:hidden rounded-full hover:bg-white text-[#1F1B16] active:text-[#E07A5F] hover:text-[#E07A5F] transition-all p-2"
                             >
                                 {open ? (
-                                    <IoClose className="text-xl" />
+                                    <IoClose className="text-xl transition-all delay-100" />
                                 ) : (
-                                    <AiOutlineMenu className="text-xl" />
+                                    <AiOutlineMenu className="text-xl transition-all delay-100" />
                                 )}
+                            </div> */}
+
+                            <div
+                                onClick={handleMenu}
+                                className="block md:hidden rounded-full hover:bg-white text-[#1F1B16] active:text-[#E07A5F] hover:text-[#E07A5F] p-2 transition-colors duration-200"
+                            >
+                                <div className="relative w-6 h-6">
+                                    <IoClose
+                                        className={`absolute text-xl transition-all duration-300 ${open ? "opacity-100 rotate-0" : "opacity-0 rotate-90"
+                                            }`}
+                                    />
+                                    <AiOutlineMenu
+                                        className={`absolute text-xl transition-all duration-300 ${open ? "opacity-0 -rotate-90" : "opacity-100 rotate-0"
+                                            }`}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
