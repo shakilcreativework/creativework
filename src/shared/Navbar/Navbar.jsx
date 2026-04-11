@@ -6,11 +6,19 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import Container from "../Container/Container";
 import Shark from "../../components/Logo/Shark";
+import useColorCycle from "../../hooks/useColorCycle";
 
 const Navbar = () => {
     const { navLinks } = useContext(AppContexts);
     const [open, setOpen] = useState(false);
 
+    // to variation colors
+    var { color, opacity } = useColorCycle([
+        "#E07A5F", "#FDCD85", "#FF9720", "#875094", "#C62828",
+        "#87A9AB", "#00897B", "#778863", "#6CB8A6", "#F08FA2"
+    ], 2500, 0.3);
+
+    // menu open and close for small devices
     const handleMenu = () => {
         setOpen(!open);
     };
@@ -25,12 +33,12 @@ const Navbar = () => {
 
                         {/* Logo */}
                         <Link to={'/'}>
-                            {/* <h2 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
-                                .Creative<span>d</span>esign
-                            </h2> */}
-
                             <div className="flex items-center dm-sans">
-                                <Shark className="w-10 text-green-300" />
+                                <Shark style={{
+                                    color: color,
+                                    opacity: opacity,
+                                    transition: "opacity 1s ease-in-out"
+                                }} className="w-10" />
                                 <span className="-ml-1 text-xl text-[#1F1B16] font-medium dm-serif">reativedesign</span>
                             </div>
                         </Link>
