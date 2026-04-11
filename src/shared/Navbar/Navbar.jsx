@@ -5,6 +5,7 @@ import { GrSearch } from "react-icons/gr";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import Container from "../Container/Container";
+import Shark from "../../components/Logo/Shark";
 
 const Navbar = () => {
     const { navLinks } = useContext(AppContexts);
@@ -24,9 +25,14 @@ const Navbar = () => {
 
                         {/* Logo */}
                         <Link to={'/'}>
-                            <h2 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
+                            {/* <h2 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
                                 .Creative<span>d</span>esign
-                            </h2>
+                            </h2> */}
+
+                            <div className="flex items-center dm-sans">
+                                <Shark className="w-10 text-green-300" />
+                                <span className="-ml-1 text-[20px] text-[#1F1B16] font-medium dm-serif">reativedesign</span>
+                            </div>
                         </Link>
 
                         {/* Desktop Menu */}

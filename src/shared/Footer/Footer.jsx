@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Container from '../Container/Container';
 import AppContexts from '../../context/AppContexts';
 import { Link, NavLink } from 'react-router';
+import Shark from '../../components/Logo/Shark';
 
 const Footer = () => {
     const { navLinks, resources } = useContext(AppContexts);
@@ -13,9 +14,14 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row justify-between gap-6 md:gap-4 lg:gap-7'>
                     <div className=' space-y-2'>
                         <Link to={'/'}>
-                            <h2 className="text-lg font-normal text-[#1F1B16] dm-serif">
+                            {/* <h2 className="text-lg font-normal text-[#1F1B16] dm-serif">
                                 .Creative<span>d</span>esign
-                            </h2>
+                            </h2> */}
+
+                            <div className="flex items-center dm-sans">
+                                <Shark className="w-10 text-green-300" />
+                                <span className="-ml-1 text-lg font-normal text-[#1F1B16] dm-serif">reativedesign</span>
+                            </div>
                         </Link>
                         <p className="dm-sans text-sm text-[#6F665C] font-medium">Curated design resources, aesthetic backgrounds, and premium mockups for creators.
 
