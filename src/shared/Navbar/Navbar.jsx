@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import AppContexts from "../../context/AppContexts";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { GrSearch } from "react-icons/gr";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
@@ -23,9 +23,11 @@ const Navbar = () => {
                     <div className="flex justify-between items-center w-full">
 
                         {/* Logo */}
-                        <h2 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
-                            .Creative<span>d</span>esign
-                        </h2>
+                        <Link to={'/'}>
+                            <h2 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
+                                .Creative<span>d</span>esign
+                            </h2>
+                        </Link>
 
                         {/* Desktop Menu */}
                         <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
