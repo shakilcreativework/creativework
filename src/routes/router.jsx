@@ -15,6 +15,7 @@ import Typography from '../pages/Typography/Typography';
 import Branding from '../pages/Branding/Branding';
 import Icons from '../pages/Icons/Icons';
 import Abstract from '../pages/Abstract/Abstract';
+import ErrorPage from '../pages/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
     {
@@ -49,7 +50,8 @@ const router = createBrowserRouter([
                 path: '/abstract',
                 element: <Abstract />
             },
-        ]
+        ],
+        errorElement: <ErrorPage />
     }
 ]);
 
