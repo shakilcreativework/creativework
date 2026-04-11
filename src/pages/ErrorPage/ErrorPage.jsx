@@ -11,11 +11,10 @@ const ErrorPage = () => {
 
             <Navbar />
 
-            <div className='flex-1 bg-[#FAF8F5] py-5'>
+            <div className='flex justify-center items-center px-6 flex-1 bg-[#FAF8F5] py-5'>
 
                 <Container>
-                    <div className="flex items-center justify-center px-6">
-                        <div className="text-center">
+                        <div className='text-center'>
 
                             {/* Error Code */}
                             <h1 className="text-8xl font-extrabold btn-c dm-sans">
@@ -23,7 +22,7 @@ const ErrorPage = () => {
                             </h1>
 
                             {/* Title */}
-                            <h2 className="text-3xl font-semibold mt-4 text-[#1F1B16] dm-sans">
+                            <h2 className=" text-xl md:text-3xl font-semibold mt-4 text-[#1F1B16] dm-sans">
                                 Oops! Page not found
                             </h2>
 
@@ -67,7 +66,6 @@ const ErrorPage = () => {
                             </div>
 
                         </div>
-                    </div>
                 </Container>
             </div>
 
