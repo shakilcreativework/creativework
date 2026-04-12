@@ -3,7 +3,7 @@ import Container from '../../shared/Container/Container';
 
 const Mockups = () => {
     return (
-        <div>
+        <div className="py-5">
             <Container>
                 <p className="dm-serif font-normal text-sm">Mockups</p>
             </Container>

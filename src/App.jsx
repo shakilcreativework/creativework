@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='min-h-dvh flex flex-col overflow-hidden'>
       <Navbar />
-      <div className='flex-1'>
+      <div className='flex-1 bg-[#FAF8F5CC]'>
         <Outlet />
       </div>
       <Footer />

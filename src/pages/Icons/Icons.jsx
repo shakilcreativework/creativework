@@ -3,7 +3,7 @@ import Container from '../../shared/Container/Container';
 
 const Icons = () => {
     return (
-        <div>
+        <div className="py-5">
             <Container>
                 <p className="dm-serif font-normal text-sm">Icons</p>
             </Container>

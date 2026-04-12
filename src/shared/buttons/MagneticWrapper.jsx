@@ -28,7 +28,7 @@ export default function MagneticWrapper({ children }) {
   }, []);
 
   return (
-    <div ref={ref} className="inline-block transition-transform duration-200">
+    <div ref={ref} className="inline-block transition-transform duration-200 bg-white py-2 px-7 rounded-full">
       {children}
     </div>
   );

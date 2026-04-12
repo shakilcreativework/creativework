@@ -3,7 +3,7 @@ import Container from '../../shared/Container/Container';
 
 const Backgrounds = () => {
     return (
-        <div>
+        <div className="py-5">
             <Container>
                 <p className="dm-serif font-normal text-sm">Backgrounds</p>
             </Container>
