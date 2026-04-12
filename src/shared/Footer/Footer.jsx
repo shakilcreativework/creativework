@@ -9,10 +9,23 @@ const Footer = () => {
     const { navLinks, resources } = useContext(AppContexts);
     // console.log(resources);
 
+    // const colorHexList = [
+    //     "#E07A5F",
+    //     "#FF9720",
+    //     "#FDCD85",
+    //     "#C62828",
+    //     "#F08FA2",
+    //     "#875094",
+    //     "#87A9AB",
+    //     "#6CB8A6",
+    //     "#00897B",
+    //     "#778863"
+    // ];
+
     // to variation colors
     var { color, opacity } = useColorCycle([
-        "#E07A5F", "#FDCD85", "#FF9720", "#875094", "#C62828",
-        "#87A9AB", "#00897B", "#778863", "#6CB8A6", "#F08FA2"
+        "#E07A5F", "#FF9720", "#FDCD85", "#C62828", "#F08FA2",
+        "#875094", "#87A9AB", "#6CB8A6", "#00897B", "#778863"
     ], 2500, 0.3);
 
     return (
