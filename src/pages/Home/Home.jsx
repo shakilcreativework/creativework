@@ -9,10 +9,11 @@ const Home = () => {
         <div className="py-5">
             <Container>
                 <p className="dm-serif font-normal text-sm">Home</p>
-
-                {/* buttons */}
                 <div className="flex flex-col justify-center items-center space-y-5">
-                    <MagneticWrapper children="Unlock the Design Experience ✨" />
+                    <MagneticWrapper as="link" to="/branding" children="Unlock the Design Experience ✨" />
+                </div>
+                {/* buttons */}
+                <div>
                 </div>
             </Container>
         </div>

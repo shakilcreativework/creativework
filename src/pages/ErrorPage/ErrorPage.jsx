@@ -5,6 +5,7 @@ import Footer from '../../shared/Footer/Footer';
 import Container from '../../shared/Container/Container';
 import Panda from '../../components/Logo/Panda';
 import useColorCycle from '../../hooks/useColorCycle';
+import MagneticWrapper from '../../shared/buttons/MagneticWrapper';
 
 const ErrorPage = () => {
 
@@ -54,26 +55,7 @@ const ErrorPage = () => {
 
                         {/* Button */}
                         <div className="mt-6">
-                            <Link
-                                to="/"
-                                className="
-                                inline-flex items-center justify-center
-                                px-7 py-3
-                                bg-[#E07A5F] text-white
-                                rounded-full
-                                shadow-md
-                                hover:bg-[#C9654C]
-                                hover:shadow-lg
-                                hover:scale-105
-                                active:scale-95
-                                transition-all duration-200
-                                tracking-wide
-                                font-medium
-                                dm-sans
-                                "
-                            >
-                                Go Home
-                            </Link>
+                            <MagneticWrapper to="/" as="link" className="" children={'Go Home'} />
                         </div>
 
                         {/* Illustration */}
