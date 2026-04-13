@@ -57,12 +57,27 @@ const Navbar = () => {
                         </Link>
 
                         {/* Desktop Menu */}
+                        {/* <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
+                            {navLinks.map((nav) => (
+                                <li key={nav.name}>
+                                    <NavLink
+                                        to={nav.path}
+                                        className={({ isActive }) =>
+                                            `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? "text-[#E07A5F]" : "text-[#6F665C]"
+                                            }`
+                                        }
+                                    >
+                                        {nav.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul> */}
                         <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
                             {navLinks.map((nav) => (
                                 <li key={nav.name}>
                                     <NavLink
                                         to={nav.path}
-                                        className="dm-sans text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
+                                        className={({isActive}) => `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? "text-[#E07A5F]" : "text-[#6F665C]"}`}
                                     >
                                         {nav.name}
                                     </NavLink>
@@ -87,7 +102,7 @@ const Navbar = () => {
                                     <NavLink
                                         to={nav.path}
                                         onClick={() => setOpen(false)}
-                                        className="block dm-sans text-sm text-[#91877d] hover:text-gray-700 transition-all font-medium"
+                                        className={({isActive}) => `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? 'text-[#E07A5F]' : 'text-[#6F665C]'}`}
                                     >
                                         {nav.name}
                                     </NavLink>
