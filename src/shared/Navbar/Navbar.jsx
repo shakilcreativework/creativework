@@ -57,21 +57,6 @@ const Navbar = () => {
                         </Link>
 
                         {/* Desktop Menu */}
-                        {/* <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
-                            {navLinks.map((nav) => (
-                                <li key={nav.name}>
-                                    <NavLink
-                                        to={nav.path}
-                                        className={({ isActive }) =>
-                                            `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? "text-[#E07A5F]" : "text-[#6F665C]"
-                                            }`
-                                        }
-                                    >
-                                        {nav.name}
-                                    </NavLink>
-                                </li>
-                            ))}
-                        </ul> */}
                         <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
                             {navLinks.map((nav) => (
                                 <li key={nav.name}>
@@ -98,11 +83,11 @@ const Navbar = () => {
                         >
                             {navLinks.map((nav) => (
                                 // ✅ CHANGE 4
-                                <li key={nav.name} className="w-full text-left px-6 py-2">
+                                <li key={nav.name} className="text-left px-6 py-2">
                                     <NavLink
                                         to={nav.path}
                                         onClick={() => setOpen(false)}
-                                        className={({isActive}) => `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? 'text-[#E07A5F]' : 'text-[#6F665C]'}`}
+                                        className={({isActive}) => `flex w-full dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? 'text-[#E07A5F]' : 'text-[#6F665C]'}`}
                                     >
                                         {nav.name}
                                     </NavLink>
