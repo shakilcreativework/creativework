@@ -77,7 +77,7 @@ const Navbar = () => {
                         transform transition-all duration-300 ease-in-out
 
                         ${open
-                                    ? "translate-y-3.5 opacity-100"
+                                    ? "translate-y-0 opacity-100"
                                     : "-translate-y-4 opacity-0 pointer-events-none"
                                 }`}
                         >
