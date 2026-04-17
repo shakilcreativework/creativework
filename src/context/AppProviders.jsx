@@ -17,13 +17,15 @@ const AppProviders = ({ children }) => {
         { name: "Abstract", path: "/abstract" },
     ];
 
+    // trending categories
+
     // resources
     const resources = [
         { name: "Adobestock", path: "https://stock.adobe.com" },
         { name: "Shutterstock", path: "https://www.shutterstock.com/" },
     ];
 
-    // categories
+    // trending categories
     const categories = [
         "All",
         "Backgrounds",
@@ -31,7 +33,7 @@ const AppProviders = ({ children }) => {
         "Typography",
         "Branding",
         "Abstract",
-        "Minimal"
+        "Minimal",
     ];
 
     // all values pass by object
