@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify';
 function App() {
 
   return (
-    <div className='min-h-dvh flex flex-col overflow-hidden'>
+    <div className='min-h-dvh flex flex-col'>
       <Navbar />
       <div className='flex-1 bg-[#FAF8F5]'>
         <Outlet />
