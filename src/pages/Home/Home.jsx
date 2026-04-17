@@ -36,7 +36,7 @@ const Home = () => {
                             Trending Designs
                         </h3>
 
-                        <div className="bg-white shadow-sm p-2 rounded-sm">
+                        <div className="bg-white shadow-xs p-2 rounded-sm">
                             <div className="flex gap-3 overflow-x-auto whitespace-nowrap no-scrollbar scroll-smooth">
                                 {categories.map((category, idx) => (
                                     <div key={idx} className="shrink-0 py-1 ">
