@@ -34,6 +34,7 @@ const AppProviders = ({ children }) => {
         "Branding",
         "Abstract",
         "Minimal",
+        "Icons"
     ];
 
     // all values pass by object
