@@ -29,7 +29,7 @@ const Home = () => {
                     </div>
                 </Container>
             </div>
-            <div className="py-20">
+            <div className=" py-10 md:py-14 lg:py-20">
                 <Container>
                     <div className="space-y-4">
                         <h3 className="text-[#2a2622] text-base md:text-lg lg:text-xl xl:text-2xl dm-serif">
