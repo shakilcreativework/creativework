@@ -2,8 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
 @import "tailwindcss";
 
-/* font family */
 
+/* full page scroll bar hide */
+html, body {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE & Edge */
+  scroll-behavior: smooth;      /* smooth scroll */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+
+/* font family */
 .dm-sans {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
