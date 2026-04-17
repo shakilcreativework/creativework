@@ -40,18 +40,28 @@ export default function MagneticButton({
     };
   }, []);
 
+  
+  // button styles
   const baseStyles = clsx(
-    "inline-flex items-center justify-center transition-transform duration-200 py-2 px-7 rounded-full cursor-pointer shadow-xs hover:shadow-sm active:text-[#E07A5F] hover:text-[#E07A5F]",
+    "inline-flex items-center justify-center transition-transform duration-200 rounded-full cursor-pointer active:text-[#E07A5F] hover:text-[#E07A5F]",
+
     !className?.includes("bg-") && "bg-white",
     !className?.includes("text-") && "text-black",
+    !className?.includes("py-") && "py-2",
+    !className?.includes("px-") && "px-7",
+
+    // ✅ fixed shadow logic
+    !className?.match(/shadow(-|$)/) && "shadow-xs hover:shadow-sm",
+
     className
   );
+
 
   // 🔀 Render types
   if (as === "link" && to) {
     return (
       <Link to={to} ref={ref} className={`${baseStyles} flex justify-center items-center gap-3`}>
-       {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
+        {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
       </Link>
     );
   }

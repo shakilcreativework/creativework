@@ -36,11 +36,11 @@ const Home = () => {
                             Trending Designs
                         </h3>
 
-                        <div className="bg-gray-50 shadow-sm p-2 rounded-sm">
+                        <div className="bg-white shadow-sm p-2 rounded-sm">
                             <div className="flex gap-3 overflow-x-auto whitespace-nowrap no-scrollbar scroll-smooth">
                                 {categories.map((category, idx) => (
-                                    <div key={idx} className="shrink-0 py-1">
-                                        <MagneticWrapper>
+                                    <div key={idx} className="shrink-0 py-1 ">
+                                        <MagneticWrapper className="z-50 shadow-sm hover:shadow-md py-1 px-5">
                                             {category}
                                         </MagneticWrapper>
                                     </div>
