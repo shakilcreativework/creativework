@@ -36,12 +36,16 @@ const Home = () => {
                             Trending Designs
                         </h3>
 
-                        <div className="flex gap-3 overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-hide pb-2">
-                            {categories.map((category, idx) => (
-                                <div key={idx} className="inline-block">
-                                    <MagneticWrapper className="py-1">{category}</MagneticWrapper>
-                                </div>
-                            ))}
+                        <div className="bg-white/40 shadow-sm p-2 rounded-sm">
+                            <div className="flex gap-3 overflow-x-auto whitespace-nowrap no-scrollbar scroll-smooth">
+                                {categories.map((category, idx) => (
+                                    <div key={idx} className="shrink-0">
+                                        <MagneticWrapper>
+                                            {category}
+                                        </MagneticWrapper>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </Container>

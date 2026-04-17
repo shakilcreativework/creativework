@@ -50,3 +50,14 @@
 | Text       | `text-[#6F665C]`                  |
 | Accent     | `text-[#E07A5F]`                  |
 | Button     | `bg-[#E07A5F] hover:bg-[#C9654C]` | */
+
+/* scroll bar hidder for categories button */
+/* index.css or App.css */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
