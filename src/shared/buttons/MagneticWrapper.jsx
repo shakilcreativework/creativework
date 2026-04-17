@@ -10,6 +10,8 @@ export default function MagneticButton({
   href,
   onClick,
   as = "button", // "button" | "link" | "a"
+  leftIcon,
+  rightIcon
 }) {
   const ref = useRef(null);
 
@@ -39,7 +41,7 @@ export default function MagneticButton({
   }, []);
 
   const baseStyles = clsx(
-    "inline-flex items-center justify-center transition-transform duration-200 py-2 px-7 rounded-full cursor-pointer shadow-xs hover:shadow-sm",
+    "inline-flex items-center justify-center transition-transform duration-200 py-2 px-7 rounded-full cursor-pointer shadow-xs hover:shadow-sm active:text-[#E07A5F] hover:text-[#E07A5F]",
     !className?.includes("bg-") && "bg-white",
     !className?.includes("text-") && "text-black",
     className
@@ -48,23 +50,23 @@ export default function MagneticButton({
   // 🔀 Render types
   if (as === "link" && to) {
     return (
-      <Link to={to} ref={ref} className={baseStyles}>
-        {children || text}
+      <Link to={to} ref={ref} className={`${baseStyles} flex justify-center items-center gap-3`}>
+       {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
       </Link>
     );
   }
 
   if (as === "a" && href) {
     return (
-      <a href={href} ref={ref} className={baseStyles}>
-        {children || text}
+      <a href={href} ref={ref} className={`${baseStyles} flex justify-center items-center gap-3`}>
+        {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
       </a>
     );
   }
 
   return (
-    <button ref={ref} onClick={onClick} className={baseStyles}>
-      {children || text}
+    <button ref={ref} onClick={onClick} className={`${baseStyles} flex justify-center items-center gap-3`}>
+      {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
     </button>
   );
 }

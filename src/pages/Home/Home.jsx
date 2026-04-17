@@ -1,19 +1,22 @@
 
 import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import Container from "../../shared/Container/Container";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 
 const Home = () => {
 
     return (
-        <div className="py-5">
-            <Container>
-                <p className="dm-serif font-normal text-sm">Home</p>
-                <div className="flex flex-col justify-center items-center space-y-5">
-                    <MagneticWrapper as="link" to="/branding" children="Unlock the Design Experience ✨" />
-                </div>
-                {/* buttons */}
-                <div>
+        <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url('https://i.ibb.co.com/GQBkDmKC/arts-60.jpg')] bg-cover bg-center h-108.75 ">
+            <Container className={"h-full"}>
+                <div className="flex flex-col gap-4 justify-center items-start h-full">
+                    <h1 className=" text-3xl md:text-5xl lg:text-6xl text-white/80">Curated Design Resources</h1>
+                    <p className=" text-sm md:text-base lg:text-lg text-white/80">Discover premium backgrounds, mockups, and design assets for your creative projects.</p>
+                    <div className="flex flex-col md:flex-row gap-3">
+                        <MagneticWrapper text={"Explore Designs"} className={'bg-black text-white'} rightIcon={<FaArrowRightLong />} />
+                        <MagneticWrapper text={"Browse Backgrounds"} className={'text-black'} />
+                    </div>
                 </div>
             </Container>
         </div>
