@@ -5,17 +5,17 @@ import Container from "../../shared/Container/Container";
 import { FaArrowRightLong } from "react-icons/fa6";
 import AppContexts from "../../context/AppContexts";
 
-// https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg 0k type better done
+// https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg 0k type better 
 // https://i.ibb.co.com/cXZkF17T/arts-2.jpg
 // https://i.ibb.co.com/p7XTDCn/arts-3.jpg
 // https://i.ibb.co.com/21XZBYTR/arts-4.jpg
 // https://i.ibb.co.com/RpYvrg4x/arts-5.jpg 0k type better
-// https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg 0k type better
+// https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg 0k type better done
+// https://i.ibb.co.com/vxmzQLNP/arts-11.jpg ok type better done
 // https://i.ibb.co.com/hRwmmNXx/arts-7.jpg
 // https://i.ibb.co.com/FqKMkCj2/arts-8.jpg ok type
 // https://i.ibb.co.com/Z6Mgkh8B/arts-9.jpg
 // https://i.ibb.co.com/kgyJ9sTD/arts-10.jpg ok type
-// https://i.ibb.co.com/vxmzQLNP/arts-11.jpg ok type
 // https://i.ibb.co.com/L7ZhY4T/arts-12.jpg ok
 // https://i.ibb.co.com/6csVwMDn/arts-13.jpg ok
 // https://i.ibb.co.com/GQBkDmKC/arts-60.jpg
@@ -35,11 +35,11 @@ const Home = () => {
 
     return (
         <div>
-            <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.55),rgba(0,0,0,0.35)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
+            <div className="bg-[linear-gradient(to_right,rgba(120,53,15,0.85),rgba(234,88,12,0.55),rgba(251,146,60,0.35)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
                 <Container className={"h-full"}>
                     <div className="flex flex-col gap-4 justify-center items-start h-full">
-                        <h1 className=" text-3xl md:text-5xl lg:text-6xl text-white/80 dm-serif text-shadow-white">Curated Design Resources</h1>
-                        <p className=" text-sm md:text-base lg:text-lg text-white/80 text-shadow-white">Discover premium backgrounds, mockups, and design assets for your creative projects.</p>
+                        <h1 className=" text-3xl md:text-5xl lg:text-6xl text-white/80 dm-serif text-shadow-lg">Curated Design Resources</h1>
+                        <p className=" text-sm md:text-base lg:text-lg text-white/80 text-shadow-lg">Discover premium backgrounds, mockups, and design assets for your creative projects.</p>
                         <div className="flex flex-col md:flex-row gap-3">
                             <MagneticWrapper text={"Explore Designs"} className={'bg-black text-white'} rightIcon={<FaArrowRightLong />} to={'/branding'} as="link" />
                             <MagneticWrapper text={"Browse Backgrounds"} className={'text-black'} to={'/backgrounds'} as="link" />
