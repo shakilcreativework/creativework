@@ -53,7 +53,7 @@ const Home = () => {
             </div>
             {/* design card */}
             <Container>
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-5 lg:gap-6 py-10">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-5 lg:gap-6 py-10">
                     <Card type='new' image={"https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg"} />
                     <Card type='popular' image={"https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg"} />
                     <Card type='trending' image={"https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg"} />

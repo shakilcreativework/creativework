@@ -30,7 +30,8 @@ const Card = ({ image, type }) => {
                         <img
                             src={image}
                             alt="deer"
-                            className="w-full h-52 object-contain transition-transform duration-300 group-hover:scale-105"
+                            className="w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                            loading="lazy"
                         />
                     </div>
                 </div>
