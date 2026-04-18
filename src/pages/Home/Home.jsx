@@ -5,25 +5,6 @@ import Container from "../../shared/Container/Container";
 import AppContexts from "../../context/AppContexts";
 import Banner from "../../components/Banner/Banner";
 
-// https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg 0k type better 
-// https://i.ibb.co.com/cXZkF17T/arts-2.jpg
-// https://i.ibb.co.com/p7XTDCn/arts-3.jpg
-// https://i.ibb.co.com/21XZBYTR/arts-4.jpg
-// https://i.ibb.co.com/RpYvrg4x/arts-5.jpg 0k type better
-// https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg 0k type better done
-// https://i.ibb.co.com/vxmzQLNP/arts-11.jpg ok type better done
-// https://i.ibb.co.com/hRwmmNXx/arts-7.jpg
-// https://i.ibb.co.com/FqKMkCj2/arts-8.jpg ok type
-// https://i.ibb.co.com/Z6Mgkh8B/arts-9.jpg
-// https://i.ibb.co.com/kgyJ9sTD/arts-10.jpg ok type
-// https://i.ibb.co.com/L7ZhY4T/arts-12.jpg ok
-// https://i.ibb.co.com/6csVwMDn/arts-13.jpg ok
-// https://i.ibb.co.com/GQBkDmKC/arts-60.jpg
-// https://i.ibb.co.com/rG12Rd6G/arts-41.jpg
-// https://i.ibb.co.com/CKqjh9hj/arts-42.jpg
-// https://i.ibb.co.com/RkjJPWMM/arts-43.jpg
-// https://i.ibb.co.com/Xx72939R/arts-44.jpg
-
 const Home = () => {
     const { categories } = useContext(AppContexts);
     const [currentTab, setCurrentTab] = useState("All");

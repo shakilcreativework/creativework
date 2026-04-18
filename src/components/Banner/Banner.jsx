@@ -3,6 +3,26 @@ import Container from '../../shared/Container/Container';
 import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import { FaArrowRightLong } from "react-icons/fa6";
 
+
+// https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg 0k type better 
+// https://i.ibb.co.com/cXZkF17T/arts-2.jpg
+// https://i.ibb.co.com/p7XTDCn/arts-3.jpg
+// https://i.ibb.co.com/21XZBYTR/arts-4.jpg
+// https://i.ibb.co.com/RpYvrg4x/arts-5.jpg 0k type better
+// https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg 0k type better done
+// https://i.ibb.co.com/vxmzQLNP/arts-11.jpg ok type better done
+// https://i.ibb.co.com/hRwmmNXx/arts-7.jpg
+// https://i.ibb.co.com/FqKMkCj2/arts-8.jpg ok type
+// https://i.ibb.co.com/Z6Mgkh8B/arts-9.jpg
+// https://i.ibb.co.com/kgyJ9sTD/arts-10.jpg ok type
+// https://i.ibb.co.com/L7ZhY4T/arts-12.jpg ok
+// https://i.ibb.co.com/6csVwMDn/arts-13.jpg ok
+// https://i.ibb.co.com/GQBkDmKC/arts-60.jpg
+// https://i.ibb.co.com/rG12Rd6G/arts-41.jpg
+// https://i.ibb.co.com/CKqjh9hj/arts-42.jpg
+// https://i.ibb.co.com/RkjJPWMM/arts-43.jpg
+// https://i.ibb.co.com/Xx72939R/arts-44.jpg
+
 // <div className="bg-[linear-gradient(to_right,rgba(120,53,15,0.85),rgba(234,88,12,0.55),rgba(251,146,60,0.35)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
 // <div className="bg-[linear-gradient(to_right,rgba(224,122,95,0.85),rgba(224,122,95,0.55),rgba(224,122,95,0.25)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">                
 // <div className="bg-[linear-gradient(to_right,rgba(224,122,95,0.75),rgba(224,122,95,0.45),rgba(224,122,95,0.15)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
