@@ -30,9 +30,9 @@ const Home = () => {
 
     return (
         <div>
-            {/* <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.55),rgba(0,0,0,0.35)),url('https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full"> */}
-            <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.65)_35%,rgba(0,0,0,0.35)_65%,rgba(0,0,0,0.15)_100%),url('https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
-            {/* <div className="bg-[linear-gradient(to_right,rgba(10,10,20,0.9)_0%,rgba(10,10,20,0.7)_40%,rgba(10,10,20,0.4)_70%,rgba(10,10,20,0.2)_100%),url('https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full"> */}
+            <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.55),rgba(0,0,0,0.35)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
+            {/* <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.65)_35%,rgba(0,0,0,0.35)_65%,rgba(0,0,0,0.15)_100%),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full"> */}
+            {/* <div className="bg-[linear-gradient(to_right,rgba(10,10,20,0.9)_0%,rgba(10,10,20,0.7)_40%,rgba(10,10,20,0.4)_70%,rgba(10,10,20,0.2)_100%),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full"> */}
                 <Container className={"h-full"}>
                     <div className="flex flex-col gap-4 justify-center items-start h-full">
                         <h1 className=" text-3xl md:text-5xl lg:text-6xl text-white/80 dm-serif text-shadow-white">Curated Design Resources</h1>
