@@ -37,12 +37,20 @@ const AppProviders = ({ children }) => {
         "Icons"
     ];
 
+    // badge types
+    const specialTagStyles = {
+        popular: "bg-[#FFE8E3] text-[#E07A5F]",
+        trending: "bg-[#FFF3D6] text-[#FF9720]",
+        new: "bg-[#E6F7F1] text-[#00897B]",
+    };
+
     // all values pass by object
     const value = {
         posts,
         categories,
         navLinks,
         resources,
+        specialTagStyles
     };
     return (
         <AppContexts.Provider value={value}>
