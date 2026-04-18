@@ -6,6 +6,7 @@ import AppContexts from "../../context/AppContexts";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 
+// https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
 // https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg
 // https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg
 // https://i.ibb.co.com/JFxkNL41/Resources-silhouette-4.jpg
@@ -14,7 +15,6 @@ import Card from "../../components/Card/Card";
 // https://i.ibb.co.com/p6phxq9d/Resources-silhouette-7.jpg
 // https://i.ibb.co.com/qMHM2BgN/Resources-silhouette-8.jpg
 // https://i.ibb.co.com/SbRjTCb/Resources-silhouette-9.jpg
-// https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
 
 const Home = () => {
     const { categories } = useContext(AppContexts);
@@ -53,7 +53,8 @@ const Home = () => {
             </div>
             {/* design card */}
             <Container>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-5 lg:gap-6 py-10">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-5 lg:gap-6 py-10">
+                    <Card type='new' image={"https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg"} />
                     <Card type='popular' image={"https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg"} />
                     <Card type='trending' image={"https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg"} />
                     <Card type='new' image={"https://i.ibb.co.com/JFxkNL41/Resources-silhouette-4.jpg"} />
