@@ -37,7 +37,7 @@ const Card = ({ image, type }) => {
 
                 <div className="p-4 space-y-1">
                     <h3 className="text-[#1F1B16] text-sm font-medium line-clamp-1">
-                        Perfect deer for design assets graphic designer
+                        Curated design resources, aesthetic backgrounds, and premium mockups for creators.
                     </h3>
                     <span className="text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full shadow-sm">
                         Branding
