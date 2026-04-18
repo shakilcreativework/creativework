@@ -1,5 +1,5 @@
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import Container from "../../shared/Container/Container";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -26,13 +26,16 @@ import AppContexts from "../../context/AppContexts";
 
 const Home = () => {
     const { categories } = useContext(AppContexts);
-    // console.log(categories);
+    const [currentTab, setCurrentTab] = useState("All");
+
+    // categories handle click function
+    const selectCategories = (category) => {
+        setCurrentTab(category)
+    };
 
     return (
         <div>
             <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.55),rgba(0,0,0,0.35)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
-            {/* <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.65)_35%,rgba(0,0,0,0.35)_65%,rgba(0,0,0,0.15)_100%),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full"> */}
-            {/* <div className="bg-[linear-gradient(to_right,rgba(10,10,20,0.9)_0%,rgba(10,10,20,0.7)_40%,rgba(10,10,20,0.4)_70%,rgba(10,10,20,0.2)_100%),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full"> */}
                 <Container className={"h-full"}>
                     <div className="flex flex-col gap-4 justify-center items-start h-full">
                         <h1 className=" text-3xl md:text-5xl lg:text-6xl text-white/80 dm-serif text-shadow-white">Curated Design Resources</h1>
@@ -55,7 +58,7 @@ const Home = () => {
                             <div className="flex gap-3 overflow-x-auto whitespace-nowrap no-scrollbar scroll-smooth">
                                 {categories.map((category, idx) => (
                                     <div key={idx} className="shrink-0 py-1 ">
-                                        <MagneticWrapper className="z-50 shadow-sm hover:shadow-md py-1 px-5">
+                                        <MagneticWrapper onClick={() => selectCategories(category)} className={`z-50 shadow-sm hover:shadow-md py-1 px-5 ${currentTab.toLocaleLowerCase() === category.toLocaleLowerCase() ? 'bg-black text-white' : ''}`}>
                                             {category}
                                         </MagneticWrapper>
                                     </div>
