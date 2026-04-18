@@ -1,3 +1,4 @@
+import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
@@ -42,7 +43,7 @@ export default function MagneticButton({
 
   
   // button styles
-  const baseStyles = clsx(
+  const baseStyles = twMerge(clsx(
     "inline-flex items-center justify-center transition-transform duration-200 rounded-full cursor-pointer active:text-[#E07A5F] hover:text-[#E07A5F]",
 
     !className?.includes("bg-") && "bg-white",
@@ -52,9 +53,11 @@ export default function MagneticButton({
 
     // ✅ fixed shadow logic
     !className?.match(/shadow(-|$)/) && "shadow-xs hover:shadow-sm",
+    !className?.includes("active") && "active:text-[#E07A5F]",
+    !className?.includes("hover") && "hover:text-[#E07A5F]",
 
     className
-  );
+  ));
 
 
   // 🔀 Render types
