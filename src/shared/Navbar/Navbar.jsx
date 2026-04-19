@@ -7,6 +7,8 @@ import { IoClose } from "react-icons/io5";
 import Container from "../Container/Container";
 import Shark from "../../components/Logo/Shark";
 import useColorCycle from "../../hooks/useColorCycle";
+import SoundButton from "../buttons/SoundButton";
+import { CiGift } from "react-icons/ci";
 
 const Navbar = () => {
     const { navLinks } = useContext(AppContexts);
@@ -57,12 +59,12 @@ const Navbar = () => {
                         </Link>
 
                         {/* Desktop Menu */}
-                        <ul className="hidden md:flex gap-4 lg:gap-6 items-center">
+                        <ul className="hidden lg:flex gap-4 lg:gap-6 items-center">
                             {navLinks.map((nav) => (
                                 <li key={nav.name}>
                                     <NavLink
                                         to={nav.path}
-                                        className={({isActive}) => `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? "text-[#E07A5F]" : "text-[#6F665C]"}`}
+                                        className={({ isActive }) => `dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? "text-[#E07A5F]" : "text-[#6F665C]"}`}
                                     >
                                         {nav.name}
                                     </NavLink>
@@ -73,7 +75,7 @@ const Navbar = () => {
                         {/* Mobile Menu */}
                         {/* ✅ CHANGE 3 (BIG FIX) */}
                         <ul
-                            className={`absolute md:hidden w-full left-0 top-full bg-[#FAF8F5] py-6 flex flex-col
+                            className={`absolute lg:hidden w-full left-0 top-full bg-[#FAF8F5] py-6 flex flex-col
                         transform transition-all duration-300 ease-in-out
 
                         ${open
@@ -81,18 +83,24 @@ const Navbar = () => {
                                     : "-translate-y-4 opacity-0 pointer-events-none"
                                 }`}
                         >
+
                             {navLinks.map((nav) => (
                                 // ✅ CHANGE 4
                                 <li key={nav.name} className="text-left px-6 py-2">
                                     <NavLink
                                         to={nav.path}
                                         onClick={() => setOpen(false)}
-                                        className={({isActive}) => `flex w-full dm-sans text-sm font-medium hover:text-[#E07A5F] transition-all ${isActive ? 'text-[#E07A5F]' : 'text-[#6F665C]'}`}
+                                        className={({ isActive }) => `flex w-full dm-sans text-sm md:text-base font-medium hover:text-[#E07A5F] transition-all ${isActive ? 'text-[#E07A5F]' : 'text-[#6F665C]'}`}
                                     >
                                         {nav.name}
                                     </NavLink>
                                 </li>
                             ))}
+
+                            {/* Free Designs btn */}
+                            <div className="md:hidden text-center mt-5">
+                                <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                            </div>
                         </ul>
 
                         {/* Icons */}
@@ -101,9 +109,14 @@ const Navbar = () => {
                                 <GrSearch className="text-lg" />
                             </div>
 
+                            {/* Free Designs btn */}
+                            <div className="hidden md:block">
+                                <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                            </div>
+
                             <div
                                 onClick={handleMenu}
-                                className="block md:hidden rounded-full hover:bg-white text-[#1F1B16] active:text-[#E07A5F] hover:text-[#E07A5F] p-2 transition-colors duration-200"
+                                className="block lg:hidden rounded-full hover:bg-white text-[#1F1B16] active:text-[#E07A5F] hover:text-[#E07A5F] p-2 transition-colors duration-200"
                             >
                                 <div className="relative w-6 h-6">
                                     <IoClose

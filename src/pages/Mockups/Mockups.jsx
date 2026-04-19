@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../../shared/Container/Container';
+import SoundButton from '../../shared/buttons/SoundButton';
 
 const Mockups = () => {
     return (

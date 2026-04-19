@@ -73,3 +73,55 @@ body::-webkit-scrollbar {
   -ms-overflow-style: none;  /* IE/Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+/* 🔊 Custom sound-wave animation */
+/* @keyframes soundWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+} */
+
+/* @keyframes soundWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+} */
+
+/* 🔊 Outer radiation wave */
+@keyframes borderWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.4); /* 👈 controls spread (~20px feel) */
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Utility class */
+.animate-border-wave {
+  animation: soundWave 2s ease-out infinite;
+}
