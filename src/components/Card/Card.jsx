@@ -32,12 +32,13 @@ const Card = ({ image, type }) => {
                             alt="deer"
                             className="w-full object-contain transition-transform duration-300 group-hover:scale-105"
                             loading="lazy"
+                            decoding='async'
                         />
                     </div>
                 </div>
 
                 <div className="p-4 space-y-1">
-                    <h3 className="text-[#1F1B16] text-sm font-medium line-clamp-1">
+                    <h3 className="text-[#1F1B16] text-sm dm-serif font-medium line-clamp-1">
                         Curated design resources, aesthetic backgrounds, and premium mockups for creators.
                     </h3>
                     <span className="text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full shadow-sm">

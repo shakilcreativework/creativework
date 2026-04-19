@@ -32,7 +32,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Banner = () => {
     return (
-        <div className="bg-[linear-gradient(to_right,rgba(255,255,255,0.1),rgba(224,122,95,0.35),rgba(255,255,255,0.05)),url('https://i.ibb.co.com/7dZ65ZpV/arts-6.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
+        <div className="bg-[linear-gradient(to_right,rgba(255,255,255,0.1),rgba(224,122,95,0.35),rgba(255,255,255,0.05)),url('https://i.ibb.co.com/RpYvrg4x/arts-5.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
             <Container className={"h-full"}>
                 <div className="flex flex-col gap-2 md:gap-4 justify-center items-start h-full">
                     <h1 className=" text-[28px] md:text-5xl lg:text-6xl text-black/80 dm-serif text-shadow-lg">Curated Design Resources</h1>
