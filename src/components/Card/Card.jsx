@@ -26,13 +26,15 @@ const Card = ({ image, type }) => {
 
                     <SpecialTag type={type} />
 
+
+
                     <div className="bg-white p-4 flex items-center justify-center">
                         <img
                             src={image}
                             alt="deer"
-                            className="w-full object-contain transition-transform duration-300 group-hover:scale-105"
-                            loading="lazy"
+                            loading='lazy'
                             decoding='async'
+                            className="w-full object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                     </div>
                 </div>
