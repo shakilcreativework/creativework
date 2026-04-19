@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../../shared/Container/Container';
 import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import { FaArrowRightLong } from "react-icons/fa6";
+import SoundButton from '../../shared/buttons/SoundButton';
 
 
 // https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg 0k type better 
@@ -38,7 +39,7 @@ const Banner = () => {
                     <h1 className=" text-[28px] md:text-5xl lg:text-6xl text-black/80 dm-serif text-shadow-lg">Curated Design Resources</h1>
                     <p className=" text-sm md:text-base lg:text-lg text-black/80 text-shadow-lg">Discover premium backgrounds, mockups, and design assets for your creative projects.</p>
                     <div className="flex flex-col md:flex-row gap-3 mt-2 md:mt-0">
-                        <MagneticWrapper text={"Explore Designs"} className={'bg-black text-white'} rightIcon={<FaArrowRightLong />} to={'/branding'} as="link" />
+                        <SoundButton rightIcon={<FaArrowRightLong />} text={"Explore Designs"} to={'/branding'} as="link" />
                         <MagneticWrapper text={"Browse Backgrounds"} className={'text-black'} to={'/backgrounds'} as="link" />
                     </div>
                 </div>
