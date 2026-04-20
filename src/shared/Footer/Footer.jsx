@@ -4,6 +4,9 @@ import AppContexts from '../../context/AppContexts';
 import { Link, NavLink } from 'react-router';
 import Shark from '../../components/Logo/Shark';
 import useColorCycle from '../../hooks/useColorCycle';
+import { FaDiscord, FaLinkedinIn, FaPinterestP } from 'react-icons/fa6';
+import { FaTelegramPlane } from "react-icons/fa";
+
 
 const Footer = () => {
     const { navLinks, resources, resourcesDesign } = useContext(AppContexts);
@@ -33,7 +36,7 @@ const Footer = () => {
             <Container>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-10 md:gap-8 lg:gap-7'>
                     {/* <div className='flex flex-col md:flex-row justify-between gap-6 md:gap-4 lg:gap-7'> */}
-                    <div className='sm:col-span-2 md:col-span-3 space-y-2'>
+                    <div className='sm:col-span-2 md:col-span-3 space-y-4'>
                         <Link to={'/'}>
                             <div className="flex items-center dm-sans">
                                 <Shark style={{
@@ -44,10 +47,99 @@ const Footer = () => {
                                 <span className="-ml-1 text-xl font-medium text-[#1F1B16] dm-serif">reativedesign</span>
                             </div>
                         </Link>
-                        <p className="dm-sans text-sm md:text-base lg:text-sm text-[#6F665C] font-medium">Free + premium vector designs for logos, branding, t-shirts and commercial use. Download instantly and explore curated collections.
+                        <p className="dm-sans text-sm md:text-base lg:text-sm text-[#6F665C] font-medium mt-2">Free + premium vector designs for logos, branding, t-shirts and commercial use. Download instantly and explore curated collections.
                         </p>
+
+                        <div className="flex items-center gap-2">
+
+
+                            <Link
+                                to="/"
+                                className="
+                                group
+                                w-9 h-9
+                                flex items-center justify-center
+                                rounded-full
+                                bg-[#FAF8F5]
+                                text-[#6F665C]
+                                border border-[#EFEAE4]
+                                transition-all duration-300
+                                hover:bg-[#E07A5F]
+                                hover:text-white
+                                group-hover:scale-110
+                                active:scale-95
+                                hover:shadow-[0_4px_12px_rgba(224,122,95,0.25)]
+                                "
+                            >
+                                <FaDiscord className="text-lg transition-transform duration-300 group-hover:scale-110" />
+                            </Link>
+
+                            <Link
+                                to="/"
+                                className="
+                                group
+                                w-9 h-9
+                                flex items-center justify-center
+                                rounded-full
+                                bg-[#FAF8F5]
+                                text-[#6F665C]
+                                border border-[#EFEAE4]
+                                transition-all duration-300
+                                hover:bg-[#E07A5F]
+                                hover:text-white
+                                group-hover:scale-110
+                                active:scale-95
+                                hover:shadow-[0_4px_12px_rgba(224,122,95,0.25)]
+                                "
+                            >
+                                <FaTelegramPlane className="text-lg transition-transform duration-300 group-hover:scale-110" />
+                            </Link>
+
+                            <Link
+                                to="/"
+                                className="
+                                group
+                                w-9 h-9
+                                flex items-center justify-center
+                                rounded-full
+                                bg-[#FAF8F5]
+                                text-[#6F665C]
+                                border border-[#EFEAE4]
+                                transition-all duration-300
+                                hover:bg-[#E07A5F]
+                                hover:text-white
+                                group-hover:scale-110
+                                active:scale-95
+                                hover:shadow-[0_4px_12px_rgba(224,122,95,0.25)]
+                                "
+                            >
+                                <FaPinterestP className="text-lg transition-transform duration-300 group-hover:scale-110" />
+                            </Link>
+
+                            <Link
+                                to="/"
+                                className="
+                                group
+                                w-9 h-9
+                                flex items-center justify-center
+                                rounded-full
+                                bg-[#FAF8F5]
+                                text-[#6F665C]
+                                border border-[#EFEAE4]
+                                transition-all duration-300
+                                hover:bg-[#E07A5F]
+                                hover:text-white
+                                group-hover:scale-110
+                                active:scale-95
+                                hover:shadow-[0_4px_12px_rgba(224,122,95,0.25)]
+                                "
+                            >
+                                <FaLinkedinIn className="text-lg transition-transform duration-300 group-hover:scale-110" />
+                            </Link>
+
+                        </div>
                     </div>
-                    <div className=' space-y-2'>
+                    <div className=' space-y-3.5'>
                         <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
                             Explore
                         </h4>
@@ -66,7 +158,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className=' space-y-2'>
+                    <div className=' space-y-3.5'>
                         <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
                             Resources
                         </h4>
@@ -85,7 +177,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className=' space-y-2'>
+                    <div className=' space-y-3.5'>
                         <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
                             Marketplace
                         </h4>
