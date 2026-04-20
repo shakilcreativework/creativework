@@ -5,7 +5,10 @@ import Footer from '../../shared/Footer/Footer';
 import Container from '../../shared/Container/Container';
 import Panda from '../../components/Logo/Panda';
 import useColorCycle from '../../hooks/useColorCycle';
-import MagneticWrapper from '../../shared/buttons/MagneticWrapper';
+import SoundButton from '../../shared/buttons/SoundButton';
+import { HiHome } from "react-icons/hi2";
+
+// import MagneticWrapper from '../../shared/buttons/MagneticWrapper';
 
 const ErrorPage = () => {
 
@@ -55,7 +58,8 @@ const ErrorPage = () => {
 
                         {/* Button */}
                         <div className="mt-6">
-                            <MagneticWrapper to="/" as="link" className="" children={'Go Home'} />
+                            {/* <MagneticWrapper to="/" as="link" className="" children={'Go Home'} /> */}
+                            <SoundButton leftIcon={<HiHome />} to="/" as="link" className="" children={'Go Home'} />
                         </div>
 
                         {/* Illustration */}

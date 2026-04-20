@@ -6,7 +6,7 @@ import Shark from '../../components/Logo/Shark';
 import useColorCycle from '../../hooks/useColorCycle';
 
 const Footer = () => {
-    const { navLinks, resources } = useContext(AppContexts);
+    const { navLinks, resources, resourcesDesign } = useContext(AppContexts);
     // console.log(resources);
 
     // const colorHexList = [
@@ -31,8 +31,9 @@ const Footer = () => {
     return (
         <div className='bg-[#F3EEE8] pt-10 pb-5'>
             <Container>
-                <div className='flex flex-col md:flex-row justify-between gap-6 md:gap-4 lg:gap-7'>
-                    <div className=' space-y-2'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-10 md:gap-8 lg:gap-7'>
+                    {/* <div className='flex flex-col md:flex-row justify-between gap-6 md:gap-4 lg:gap-7'> */}
+                    <div className='sm:col-span-2 md:col-span-3 space-y-2'>
                         <Link to={'/'}>
                             <div className="flex items-center dm-sans">
                                 <Shark style={{
@@ -43,51 +44,66 @@ const Footer = () => {
                                 <span className="-ml-1 text-xl font-medium text-[#1F1B16] dm-serif">reativedesign</span>
                             </div>
                         </Link>
-                        <p className="dm-sans text-sm text-[#6F665C] font-medium">Curated design resources, aesthetic backgrounds, and premium mockups for creators.
-
+                        <p className="dm-sans text-sm md:text-base lg:text-sm text-[#6F665C] font-medium">Free + premium vector designs for logos, branding, t-shirts and commercial use. Download instantly and explore curated collections.
                         </p>
                     </div>
-                    <div className='flex justify-between gap-6 md:gap-4 lg:gap-7 md:w-2/7'>
-                        <div className=' space-y-2'>
-                            <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
-                                Explore
-                            </h4>
-                            <ul
-                                className={`flex flex-col gap-1`}
-                            >
-                                {navLinks.map((nav) => (
-                                    <li key={nav.name}>
-                                        <NavLink
-                                            to={nav.path}
-                                            className="dm-sans text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
-                                        >
-                                            {nav.name}
-                                        </NavLink>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className=' space-y-2'>
-                            <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
-                                Resources
-                            </h4>
-                            <ul
-                                className={`flex flex-col gap-1`}
-                            >
-                                {resources.map((nav) => (
-                                    <li key={nav.name}>
-                                        <NavLink
-                                            to={nav.path}
-                                            className="dm-sans text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
-                                        >
-                                            {nav.name}
-                                        </NavLink>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                    <div className=' space-y-2'>
+                        <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
+                            Explore
+                        </h4>
+                        <ul
+                            className={`flex flex-col gap-1`}
+                        >
+                            {navLinks.map((nav) => (
+                                <li key={nav.name}>
+                                    <NavLink
+                                        to={nav.path}
+                                        className="dm-sans text-sm md:text-base lg:text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
+                                    >
+                                        {nav.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-
+                    <div className=' space-y-2'>
+                        <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
+                            Resources
+                        </h4>
+                        <ul
+                            className={`flex flex-col gap-1`}
+                        >
+                            {resources.map((nav) => (
+                                <li key={nav.name}>
+                                    <NavLink
+                                        to={nav.path}
+                                        className="dm-sans text-sm md:text-base lg:text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
+                                    >
+                                        {nav.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className=' space-y-2'>
+                        <h4 className="text-[20px] text-[#1F1B16] font-medium dm-serif">
+                            Marketplace
+                        </h4>
+                        <ul
+                            className={`flex flex-col gap-1`}
+                        >
+                            {resourcesDesign.map((nav) => (
+                                <li key={nav.name}>
+                                    <NavLink
+                                        to={nav.path}
+                                        className="dm-sans text-sm md:text-base lg:text-sm text-[#6F665C] hover:text-[#E07A5F] transition-all font-medium"
+                                    >
+                                        {nav.name}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </Container>
             <hr className='text-[#E8E2DA] my-5' />

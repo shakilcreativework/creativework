@@ -9,18 +9,32 @@ const AppProviders = ({ children }) => {
 
     // navbar categories
     const navLinks = [
-        { name: "Backgrounds", path: "/backgrounds" },
-        { name: "Mockups", path: "/mockups" },
-        { name: "Typography", path: "/typography" },
-        { name: "Branding", path: "/branding" },
-        { name: "Icons", path: "/icons" },
-        { name: "Abstract", path: "/abstract" },
+        { name: "Free Downloads", path: "/freeDownloads" },
+        { name: "Categories", path: "/categories" },
+        { name: "Trending", path: "/trending" },
+        { name: "About", path: "/about" },
     ];
+
+    const resources = [
+        { name: "License", path: "/license" },
+        { name: "Contact", path: "/contact" },
+        { name: "Privacy", path: "/privacy" },
+        { name: "Terms", path: "/terms" },
+    ];
+
+    // const navLinks = [
+    //     { name: "Backgrounds", path: "/backgrounds" },
+    //     { name: "Mockups", path: "/mockups" },
+    //     { name: "Typography", path: "/typography" },
+    //     { name: "Branding", path: "/branding" },
+    //     { name: "Icons", path: "/icons" },
+    //     { name: "Abstract", path: "/abstract" },
+    // ];
 
     // trending categories
 
     // resources
-    const resources = [
+    const resourcesDesign = [
         { name: "Adobestock", path: "https://stock.adobe.com" },
         { name: "Shutterstock", path: "https://www.shutterstock.com/" },
     ];
@@ -50,7 +64,8 @@ const AppProviders = ({ children }) => {
         categories,
         navLinks,
         resources,
-        specialTagStyles
+        specialTagStyles,
+        resourcesDesign
     };
     return (
         <AppContexts.Provider value={value}>
