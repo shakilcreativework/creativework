@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '../../shared/Container/Container';
-import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import { FaArrowRightLong } from "react-icons/fa6";
 import SoundButton from '../../shared/buttons/SoundButton';
 
@@ -40,7 +39,7 @@ const Banner = () => {
                     <p className=" text-sm md:text-base lg:text-lg text-black/80 text-shadow-lg">Discover premium backgrounds, mockups, and design assets for your creative projects.</p>
                     <div className="flex flex-col md:flex-row gap-3 mt-2 md:mt-0">
                         <SoundButton rightIcon={<FaArrowRightLong />} text={"Explore Designs"} to={'/branding'} as="link" />
-                        <MagneticWrapper text={"Browse Backgrounds"} className={'text-black'} to={'/backgrounds'} as="link" />
+                        <SoundButton animationBgOne={'bg-white/50'} animationBgTwo={'bg-white/90'} text={"Browse Backgrounds"} className={'from-black/80 to-black text-white'} to={'/backgrounds'} as="link" />
                     </div>
                 </div>
             </Container>
