@@ -17,7 +17,7 @@ const Card = ({ image, type }) => {
 
     return (
         <div>
-            <div className="group bg-white rounded-xl border border-[#EFEAE4] overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+            <div className="group bg-white rounded-xl shadow-xs overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1">
 
                 <div className="relative">
                     {/* <span className="absolute top-3 left-3 text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full z-10">
