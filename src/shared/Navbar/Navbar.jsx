@@ -9,10 +9,14 @@ import Shark from "../../components/Logo/Shark";
 import useColorCycle from "../../hooks/useColorCycle";
 import SoundButton from "../buttons/SoundButton";
 import { CiGift } from "react-icons/ci";
+import { PiShoppingCart } from "react-icons/pi";
+import MagneticButton from "../buttons/MagneticWrapper";
+
 
 const Navbar = () => {
     const { navLinks } = useContext(AppContexts);
     const [open, setOpen] = useState(false);
+    // const [countCartDesign, setCountCartDesign] = useState(0);
 
     // const colorHexList = [
     //     "#E07A5F",
@@ -99,7 +103,16 @@ const Navbar = () => {
 
                             {/* Free Designs btn */}
                             <div className="md:hidden text-center mt-5">
-                                <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                <div className="flex gap-6 justify-center items-center">
+                                    <div className="relative inline-flex items-center justify-center">
+                                        {/* Cart Icon */}
+                                        <PiShoppingCart className="text-2xl text-gray-700" />
+
+                                        {/* Badge */}
+                                        <MagneticButton text={'0'} className={'absolute flex items-center leading-none shadow-sm justify-center -top-2 -right-2 p-2.5 w-4.5 h-4.5 text-[10px] font-semibold bg-red-500 text-white'} />
+                                    </div>
+                                    <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                </div>
                             </div>
                         </ul>
 
@@ -111,7 +124,16 @@ const Navbar = () => {
 
                             {/* Free Designs btn */}
                             <div className="hidden md:block">
-                                <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                <div className="flex gap-6 justify-center items-center">
+                                    <div className="relative inline-flex items-center justify-center">
+                                        {/* Cart Icon */}
+                                        <PiShoppingCart className="text-2xl text-gray-700" />
+
+                                        {/* Badge */}
+                                        <MagneticButton text={'0'} className={'absolute flex items-center leading-none shadow-sm justify-center -top-2 -right-2 p-2.5 w-4.5 h-4.5 text-[10px] font-semibold bg-red-500 text-white'} />
+                                    </div>
+                                    <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                </div>
                             </div>
 
                             <div
