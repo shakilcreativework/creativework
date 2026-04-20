@@ -1,7 +1,10 @@
 import React from 'react';
 import Container from '../../shared/Container/Container';
-import { FaArrowRightLong } from "react-icons/fa6";
 import SoundButton from '../../shared/buttons/SoundButton';
+import MagneticButton from '../../shared/buttons/MagneticWrapper';
+import { FaMagic } from "react-icons/fa";
+import { GrDownload } from "react-icons/gr";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 // https://i.ibb.co.com/Sw1GcJyf/arts-1.jpg 0k type better 
@@ -35,11 +38,17 @@ const Banner = () => {
         <div className="bg-[linear-gradient(to_right,rgba(255,255,255,0.1),rgba(224,122,95,0.35),rgba(255,255,255,0.05)),url('https://i.ibb.co.com/RpYvrg4x/arts-5.jpg')] bg-cover bg-center h-100 md:h-108.75 lg:h-134 xl:h-140 w-full">
             <Container className={"h-full"}>
                 <div className="flex flex-col gap-2 md:gap-4 justify-center items-start h-full">
-                    <h1 className=" text-[28px] md:text-5xl lg:text-6xl text-black/80 dm-serif text-shadow-lg">Curated Design Resources</h1>
-                    <p className=" text-sm md:text-base lg:text-lg text-black/80 text-shadow-lg">Discover premium backgrounds, mockups, and design assets for your creative projects.</p>
+                    <MagneticButton leftIcon={<FaMagic />} className={'py-1 px-3 font-medium hover:text-red-500'} children={'1,000+ designs ready'} />
+                    <div className='flex gap-4 justify-center items-center'>
+                        <div>
+                            <img src="https://i.ibb.co.com/YBrX64Y6/gift.png" className='w-20 sm:w-10 lg:w-16' alt="Gift" />
+                        </div>
+                        <h1 className=" text-3xl md:text-5xl lg:text-6xl text-black/80 dm-serif text-shadow-lg font-bold">Free Vector Downloads <span className='bg-linear-to-r from-orange-400 to-red-500 bg-clip-text bg-transparent text-transparent'>Available Now</span></h1>
+                    </div>
+                    <p className="text-base lg:text-lg text-black/80 text-shadow-lg font-medium">Get free + premium designs for logos, branding, t-shirts & commercial use — all in one hub.</p>
                     <div className="flex flex-col md:flex-row gap-3 mt-2 md:mt-0">
-                        <SoundButton rightIcon={<FaArrowRightLong />} text={"Explore Designs"} to={'/branding'} as="link" />
-                        <SoundButton animationBgOne={'bg-white/50'} animationBgTwo={'bg-white/90'} text={"Browse Backgrounds"} className={'from-black/80 to-black text-white'} to={'/backgrounds'} as="link" />
+                        <SoundButton leftIcon={<GrDownload />} text={"Download Free Designs"} to={'/branding'} as="link" />
+                        <SoundButton rightIcon={<FaArrowRightLong />} animationBgOne={'bg-white/30'} animationBgTwo={'bg-white/40'} text={"Explore Collection"} className={'from-black/70 to-black text-white'} to={'/backgrounds'} as="link" />
                     </div>
                 </div>
             </Container>
