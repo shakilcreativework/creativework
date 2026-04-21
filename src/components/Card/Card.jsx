@@ -1,6 +1,8 @@
 import React from 'react';
 import SpecialTag from '../SpecialTag/SpecialTag';
 import MagneticButton from '../../shared/buttons/MagneticWrapper';
+import SoundButton from '../../shared/buttons/SoundButton';
+import { ArrowDownToLine } from '@gravity-ui/icons';
 
 // https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg
 // https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg
@@ -37,13 +39,17 @@ const Card = ({ image, type }) => {
                     </div>
                 </div>
 
-                <div className="p-4 space-y-1">
+                <div className="px-4">
                     <h3 className="text-[#1F1B16] text-sm dm-serif font-medium line-clamp-1">
                         Curated design resources, aesthetic backgrounds, and premium mockups for creators.
                     </h3>
-                    <span className="text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full shadow-sm">
+                    {/* <span className="text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full shadow-sm">
                         Branding
-                    </span>
+                    </span> */}
+                    <div className='flex justify-center pt-3 pb-5'>
+                        <SoundButton animationBgOne={'animate-ping'} leftIcon={<ArrowDownToLine />} className={'py-2 px-4'} text={'Download Free'} />
+                    </div>
+                
                 </div>
 
             </div>

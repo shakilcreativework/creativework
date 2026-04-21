@@ -11,6 +11,7 @@ import FreeCard from "../../components/FreeCard/FreeCard";
 import TrendingCard from "../../components/TrendingCard/TrendingCard";
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
 
+
 // https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
 // https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg
 // https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg

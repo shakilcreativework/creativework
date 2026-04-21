@@ -1,6 +1,8 @@
 // DesignCard.jsx
 
 import React from "react";
+import SoundButton from "../../shared/buttons/SoundButton";
+import { ArrowDownToLine } from "@gravity-ui/icons";
 
 const DesignCard = ({ post, type = "free" }) => {
     const {title, image} = post;
@@ -72,16 +74,9 @@ const DesignCard = ({ post, type = "free" }) => {
               </button>
             )}
 
-            <button className="
-              flex-1 text-xs font-medium
-              border border-[#EFEAE4]
-              text-[#6F665C]
-              py-2 rounded-md
-              hover:bg-[#FAF8F5]
-              transition
-            ">
-              View Premium
-            </button>
+            <div className="flex justify-center w-full">
+                <SoundButton animationBgOne={'animate-ping'} leftIcon={<ArrowDownToLine />} className={'py-2'} text={'Download Free'} />
+            </div>
 
           </div>
 

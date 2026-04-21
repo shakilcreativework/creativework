@@ -1,4 +1,6 @@
 import React from 'react';
+import SoundButton from '../../shared/buttons/SoundButton';
+import {ArrowDownToLine} from '@gravity-ui/icons';
 
 const FreeCard = ({post}) => {
     const {image} = post;
@@ -26,14 +28,8 @@ const FreeCard = ({post}) => {
           />
         </div>
 
-        <div className="p-3">
-          <button className="
-            w-full bg-[#E07A5F] text-white
-            py-2 rounded-md text-sm font-medium
-            hover:bg-[#C9654C]
-          ">
-            Download Free
-          </button>
+        <div className='flex justify-center items-center pb-5'>
+          <SoundButton animationBgOne={'animate-spin'} leftIcon={<ArrowDownToLine />} className={'py-2'} text={'Download Free'} />
         </div>
 
       </div>

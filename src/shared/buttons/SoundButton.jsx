@@ -13,7 +13,7 @@ export default function SoundButton({
   leftIcon,
   rightIcon,
   animationBgOne,
-  animationBgTwo
+  animationBgTwo,
 }) {
 
   const baseStyles = twMerge(
