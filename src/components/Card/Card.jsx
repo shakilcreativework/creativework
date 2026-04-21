@@ -32,8 +32,6 @@ const Card = ({ image, type }) => {
                         <img
                             src={image}
                             alt="deer"
-                            loading='lazy'
-                            decoding='async'
                             className="w-full object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                     </div>
