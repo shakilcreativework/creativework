@@ -6,6 +6,8 @@ import AppContexts from "../../context/AppContexts";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import PinterestExclusive from "../../components/PinterestExclusive/PinterestExclusive";
+import DesignCard from "../../components/DesignCard/DesignCard";
+import FreeCard from "../../components/FreeCard/FreeCard";
 
 // https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
 // https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg
@@ -18,8 +20,9 @@ import PinterestExclusive from "../../components/PinterestExclusive/PinterestExc
 // https://i.ibb.co.com/SbRjTCb/Resources-silhouette-9.jpg
 
 const Home = () => {
-    const { categories } = useContext(AppContexts);
+    const { posts, categories } = useContext(AppContexts);
     const [currentTab, setCurrentTab] = useState("All");
+    console.log('from home', posts);
 
     // categories handle click function
     const selectCategories = (category) => {
@@ -30,10 +33,29 @@ const Home = () => {
         <div>
             {/* banner */}
             <Banner />
-            
+
             {/* Pinterest Exclusive */}
             <PinterestExclusive />
+
+            {/* .................start card................. */}
+            <Container>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 md:gap-5 lg:gap-6">
+                    {
+                        posts.map((post, index) => <FreeCard key={index} post={post} />)
+                    }
+                </div>
+            </Container>
             
+            <Container>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 md:gap-5 lg:gap-6">
+                    {
+                        posts.map((post, index) => <DesignCard key={index} post={post} type="Free" />)
+                    }
+                </div>
+            </Container>
+
+            {/* .................ends card................. */}
+
             {/* trending categories button */}
             <div className=" pt-10 md:pt-14 lg:pt-20">
                 <Container>
