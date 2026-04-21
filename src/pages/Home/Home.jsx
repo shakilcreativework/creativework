@@ -5,6 +5,7 @@ import Container from "../../shared/Container/Container";
 import AppContexts from "../../context/AppContexts";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
+import PinterestExclusive from "../../components/PinterestExclusive/PinterestExclusive";
 
 // https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
 // https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg
@@ -29,6 +30,10 @@ const Home = () => {
         <div>
             {/* banner */}
             <Banner />
+            
+            {/* Pinterest Exclusive */}
+            <PinterestExclusive />
+            
             {/* trending categories button */}
             <div className=" pt-10 md:pt-14 lg:pt-20">
                 <Container>
