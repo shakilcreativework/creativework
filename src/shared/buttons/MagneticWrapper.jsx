@@ -1,3 +1,4 @@
+
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 import { useEffect, useRef } from "react";
@@ -10,7 +11,7 @@ export default function MagneticButton({
   to,
   href,
   onClick,
-  as = "button", // "button" | "link" | "a"
+  as = "button",
   leftIcon,
   rightIcon
 }) {
@@ -25,7 +26,7 @@ export default function MagneticButton({
       const x = e.clientX - (left + width / 2);
       const y = e.clientY - (top + height / 2);
 
-      el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+      el.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
     };
 
     const reset = () => {
@@ -41,45 +42,63 @@ export default function MagneticButton({
     };
   }, []);
 
-  
-  // button styles
-  const baseStyles = twMerge(clsx(
-    "inline-flex items-center justify-center transition-transform duration-200 rounded-full cursor-pointer active:text-[#E07A5F] hover:text-[#E07A5F]",
+  // ✅ RESPONSIVE + CLEAN STYLES
+  const baseStyles = twMerge(
+  clsx(
+    "inline-flex items-center justify-center",
+    "rounded-full transition-transform duration-300 cursor-pointer",
 
+    // ✅ Responsive defaults (ONLY if not provided)
+    !className?.match(/py-/) && "py-1.5 sm:py-2 md:py-2.5",
+    !className?.match(/px-/) && "px-4 sm:px-6 md:px-7",
+    !className?.match(/text-/) && "text-sm sm:text-base",
+
+    // spacing
+    !className?.includes("gap-") && "gap-2 sm:gap-3",
+
+    // colors
     !className?.includes("bg-") && "bg-white",
-    !className?.includes("text-") && "text-black",
-    !className?.includes("py-") && "py-2",
-    !className?.includes("px-") && "px-7",
+    !className?.includes("text-") && "text-[#1F1B16]",
 
-    // ✅ fixed shadow logic
+    // interaction
+    "hover:scale-105 active:scale-95",
+    "hover:text-[#E07A5F] active:text-[#E07A5F]",
+
+    // shadow logic
     !className?.match(/shadow(-|$)/) && "shadow-xs hover:shadow-sm",
-    !className?.includes("active") && "active:text-[#E07A5F]",
-    !className?.includes("hover") && "hover:text-[#E07A5F]",
 
     className
-  ));
+  )
+);
 
+  const content = (
+    <span className="flex items-center gap-2 md:gap-2.5">
+      {leftIcon}
+      {children || text}
+      {rightIcon}
+    </span>
+  );
 
   // 🔀 Render types
   if (as === "link" && to) {
     return (
-      <Link to={to} ref={ref} className={`${baseStyles} flex justify-center items-center gap-3`}>
-        {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
+      <Link to={to} ref={ref} className={baseStyles}>
+        {content}
       </Link>
     );
   }
 
   if (as === "a" && href) {
     return (
-      <a href={href} ref={ref} className={`${baseStyles} flex justify-center items-center gap-3`}>
-        {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
+      <a href={href} ref={ref} className={baseStyles}>
+        {content}
       </a>
     );
   }
 
   return (
-    <button ref={ref} onClick={onClick} className={`${baseStyles} flex justify-center items-center gap-3`}>
-      {leftIcon ? leftIcon : ''} {children || text} {rightIcon ? rightIcon : ''}
+    <button ref={ref} onClick={onClick} className={baseStyles}>
+      {content}
     </button>
   );
 }

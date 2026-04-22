@@ -1,3 +1,4 @@
+
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
@@ -9,7 +10,7 @@ export default function SoundButton({
   to,
   href,
   onClick,
-  as = "button", // "button" | "link" | "a"
+  as = "button",
   leftIcon,
   rightIcon,
   animationBgOne,
@@ -19,48 +20,56 @@ export default function SoundButton({
   const baseStyles = twMerge(
     clsx(
       "relative inline-flex items-center justify-center capitalize",
-      "px-8 py-3 rounded-full font-medium",
+
+      // ✅ FIXED RESPONSIVE SIZE
+      "py-2.5 md:py-3 px-5 md:px-6 rounded-full font-medium",
+      "text-sm md:text-base",
+
+      // ✅ SMOOTH UX
       "transition-all duration-300 ease-in-out",
       "transform hover:scale-105 active:scale-95",
-      "overflow-hidden",
 
-      // default gradient
+      // ✅ CLEAN LAYOUT
+      "overflow-hidden whitespace-nowrap",
+
+      // ✅ DEFAULT STYLE
       !className?.includes("bg-") &&
-      "bg-gradient-to-r from-orange-400 to-red-500 text-white",
+        "bg-gradient-to-r from-orange-400 to-red-500 text-white",
+
+      // ✅ BETTER GAP CONTROL
       !className?.includes("gap-") &&
-      "gap-3",
+        "gap-2.5 md:gap-3",
 
       className
     )
   );
 
-  // overlay one
+  // 🔊 Bounce layer (kept as you want)
   const animationBgOneStyles = twMerge(
     clsx(
-      "absolute inset-0 rounded-full bg-orange-300 opacity-40 animate-bounce", // animate-ping || animate-pulse || animate-spin
-      animationBgOne 
+      "absolute inset-0 rounded-full bg-orange-300 opacity-30 animate-bounce",
+      animationBgOne
     )
   );
 
-  // overlay two
+  // 🌊 Glow layer (softened)
   const animationBgTwoStyles = twMerge(
     clsx(
-      "absolute inset-0 rounded-full bg-orange-400 opacity-20 blur-xl scale-110",
+      "absolute inset-0 rounded-full bg-orange-400 opacity-20 blur-lg scale-110",
       animationBgTwo
     )
   );
 
-
   const content = (
     <>
-      {/* 🔊 Pulse layer */}
+      {/* 🔊 Bounce layer */}
       <span className={animationBgOneStyles}></span>
 
-      {/* 🌊 Soft glow layer */}
+      {/* 🌊 Glow layer */}
       <span className={animationBgTwoStyles}></span>
 
-      {/* 🎯 Actual content */}
-      <span className="relative z-10 flex items-center gap-3">
+      {/* 🎯 Content */}
+      <span className="relative z-10 flex items-center gap-2.5 md:gap-3">
         {leftIcon}
         {children || text}
         {rightIcon}

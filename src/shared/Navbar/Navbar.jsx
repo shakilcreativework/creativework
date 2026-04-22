@@ -109,9 +109,9 @@ const Navbar = () => {
                                         <PiShoppingCart className="text-2xl text-gray-700" />
 
                                         {/* Badge */}
-                                        <MagneticButton text={'0'} className={'absolute flex items-center leading-none shadow-sm justify-center -top-2 -right-2 p-2.5 w-4.5 h-4.5 text-[10px] font-semibold bg-red-500 text-white'} />
+                                        <span className="absolute -top-3 -right-2 w-5 h-5 bg-red-600 text-white flex justify-center items-center rounded-full text-[10px] font-bold">10</span>
                                     </div>
-                                    <SoundButton className={'py-2.5 xl:py-3 px-7 xl:px-8'} leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                    <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
                                 </div>
                             </div>
                         </ul>
@@ -130,9 +130,9 @@ const Navbar = () => {
                                         <PiShoppingCart className="text-2xl text-gray-700" />
 
                                         {/* Badge */}
-                                        <MagneticButton text={'0'} className={'absolute flex items-center leading-none shadow-sm justify-center -top-2 -right-2 p-2.5 w-4.5 h-4.5 text-[10px] font-semibold bg-red-500 text-white'} />
+                                        <span className="absolute -top-3 -right-2 w-5 h-5 bg-red-600 text-white flex justify-center items-center rounded-full text-[10px] font-bold">10</span>
                                     </div>
-                                    <SoundButton className={'py-2 md:py-2.5 xl:py-3 px-7 xl:px-8'} leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                    <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
                                 </div>
                             </div>
 
