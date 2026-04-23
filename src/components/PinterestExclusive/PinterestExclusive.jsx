@@ -11,7 +11,7 @@ const PinterestExclusive = () => {
                 <div className='text-center'>
                     <div className='space-y-3'>
                         
-                        <MagneticButton leftIcon={<Gift />} className={'py-1 px-3 font-bold text-red-500 hover:text-black text-sm shadow-sm uppercase mx-auto '} children={'Pinterest Exclusive'} />
+                        <MagneticButton leftIcon={<Gift />} className={'py-1 px-3 font-bold text-red-500 hover:text-[#1F1B16] text-sm shadow-sm uppercase mx-auto '} children={'Pinterest Exclusive'} />
                         
 
                         <h1 className=" mt-4 flex flex-col sm:flex-row gap-3 justify-center items-center text-3xl md:text-4xl lg:text-5xl text-[#1F1B16] plus-jakarta font-extrabold">
@@ -19,7 +19,6 @@ const PinterestExclusive = () => {
                         </h1>
                         <p className="text-base lg:text-lg text-[#62748e] font-normal">Limited free access — download now and explore the full collection.</p>
                     </div>
-                    <SoundButton text={'Download Free'} />
                 </div>
             </Container>
         </div>

@@ -45,18 +45,18 @@ const Banner = () => {
                         <div>
                             <img src="https://i.ibb.co.com/YBrX64Y6/gift.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" />
                         </div>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#1F1B16] dm-serif text-shadow-lg font-bold">Free Vector Downloads <span className='bg-linear-to-r from-orange-400 to-red-500 bg-clip-text bg-transparent text-transparent'>Available Now</span></h1>
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#1F1B16] dm-serif font-bold">Free Vector Downloads <span className='bg-linear-to-r from-orange-400 to-red-500 bg-clip-text bg-transparent text-transparent'>Available Now</span></h1>
                     </div>
-                    <p className="text-base lg:text-lg text-[#1F1B16] text-shadow-lg font-medium mt-1 md:mt-0">Get free + premium designs for logos, branding, t-shirts & commercial use — all in one hub.</p>
+                    <p className="text-base lg:text-lg text-[#1F1B16] font-medium mt-1 md:mt-0">Get free + premium designs for logos, branding, t-shirts & commercial use — all in one hub.</p>
                     <div className="flex flex-col md:flex-row gap-3 mt-2 md:mt-0">
                         <SoundButton leftIcon={<GrDownload />} text={"Download Free Designs"} to={'/branding'} as="link" />
                         <SoundButton className={'from-[#11998E] to-[#38EF7D] text-white'} animationBgOne={'bg-green-300'} animationBgTwo={'bg-green-200'} to={'/backgrounds'} rightIcon={<FaArrowRightLong />} text={"Explore Collection"}  as="link" />
                     </div>
 
                     <div className='flex flex-wrap font-semibold justify-center gap-2 md:h-5 lg:gap-10 items-center w-full mt-3 sm:mt-4 lg:mt-10'>
-                        <p className='flex justify-center items-center gap-2 text-sm md:text-base text-shadow-lg'><IoMdCheckmarkCircleOutline className="text-red-600" /> No signup</p>
-                        <p className='flex justify-center items-center gap-2 text-sm md:text-base text-shadow-lg'><IoMdCheckmarkCircleOutline className="text-red-600" /> Commercial use</p>
-                        <p className='flex justify-center items-center gap-2 text-sm md:text-base text-shadow-lg'><IoMdCheckmarkCircleOutline className="text-red-600" /> Instant download</p>
+                        <p className='flex justify-center items-center gap-2 text-sm md:text-base'><IoMdCheckmarkCircleOutline className="text-red-600" /> No signup</p>
+                        <p className='flex justify-center items-center gap-2 text-sm md:text-base'><IoMdCheckmarkCircleOutline className="text-red-600" /> Commercial use</p>
+                        <p className='flex justify-center items-center gap-2 text-sm md:text-base'><IoMdCheckmarkCircleOutline className="text-red-600" /> Instant download</p>
                     </div>
                 </div>
             </Container>
