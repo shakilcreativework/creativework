@@ -8,7 +8,7 @@ import { GrDownload } from "react-icons/gr";
 
 const DontLeave = () => {
     return (
-        <div className="my-10 sm:my-12 md:my-14 lg:my-20">
+        <div className="my-20">
             <Container className={'max-w-5xl'}>
                 <div className=" rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden">
 

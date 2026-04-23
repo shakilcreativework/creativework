@@ -11,6 +11,7 @@ import FreeCard from "../../components/FreeCard/FreeCard";
 import TrendingCard from "../../components/TrendingCard/TrendingCard";
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import DontLeave from "../../components/DontLeave/DontLeave";
+import DesignersChoose from "../../components/DesignersChoose/DesignersChoose";
 
 
 // https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
@@ -63,6 +64,9 @@ const Home = () => {
                     </div>
                 </Container>
             </div>
+
+            {/* why designers choose */}
+            <DesignersChoose />
 
             {/* dont leave */}
             <div>
