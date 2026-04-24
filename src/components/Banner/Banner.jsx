@@ -43,7 +43,8 @@ const Banner = () => {
                     <MagneticButton leftIcon={<FaMagic />} className={'py-1 px-3 font-medium hover:text-red-500 hidden sm:flex sm:mb-2'} children={'1,000+ designs ready'} />
                     <div className='flex flex-col sm:flex-row w-full sm:w-fit gap-4 justify-center items-center'>
                         <div>
-                            <img src="https://i.ibb.co.com/YBrX64Y6/gift.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" />
+                            <img src="https://i.ibb.co.com/gB4p9S1/box.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" />
+                            {/* <img src="https://i.ibb.co.com/YBrX64Y6/gift.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" /> */}
                         </div>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#1F1B16] dm-serif font-bold">Free Vector Downloads <span className='bg-linear-to-r from-orange-400 to-red-500 bg-clip-text bg-transparent text-transparent'>Available Now</span></h1>
                     </div>

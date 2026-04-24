@@ -18,7 +18,7 @@ const DontLeave = () => {
                             <img src="https://i.ibb.co.com/dwMysmgg/shopping-cart-1.png" className='hidden sm:inline sm:w-32 lg:w-16' alt="Shoping Gift" />
                             <div className='flex flex-col sm:flex-row w-full sm:w-fit gap-4 justify-center items-center'>
                                 <div>
-                                    <img src="https://i.ibb.co.com/gB4p9S1/box.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" />
+                                    <img src="https://i.ibb.co.com/YBrX64Y6/gift.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" />
                                 </div>
                                 <h1 className=" plus-jakarta text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-extrabold">Don't Leave Empty-Handed</h1>
 
