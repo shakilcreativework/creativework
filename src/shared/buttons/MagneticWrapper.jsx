@@ -44,38 +44,40 @@ export default function MagneticButton({
 
   // ✅ RESPONSIVE + CLEAN STYLES
   const baseStyles = twMerge(
-  clsx(
-    "inline-flex items-center justify-center",
-    "rounded-full transition-transform duration-300 cursor-pointer",
+    clsx(
+      "inline-flex items-center justify-center",
+      "rounded-full transition-transform duration-300 cursor-pointer",
 
-    // ✅ Responsive defaults (ONLY if not provided)
-    !className?.match(/py-/) && "py-1.5 sm:py-2 md:py-2.5",
-    !className?.match(/px-/) && "px-4 sm:px-6 md:px-7",
-    !className?.match(/text-/) && "text-sm sm:text-base",
+      // ✅ Responsive defaults (ONLY if not provided)
+      !className?.match(/py-/) && "py-1.5 sm:py-2 md:py-2.5",
+      !className?.match(/px-/) && "px-4 sm:px-6 md:px-7",
+      !className?.match(/text-/) && "text-sm sm:text-base",
 
-    // spacing
-    !className?.includes("gap-") && "gap-2 sm:gap-3",
+      // spacing
+      !className?.includes("gap-") && "gap-2 sm:gap-3",
 
-    // colors
-    !className?.includes("bg-") && "bg-white",
-    !className?.includes("text-") && "text-[#1F1B16]",
+      // colors
+      !className?.includes("bg-") && "bg-white",
+      !className?.includes("text-") && "text-[#1F1B16]",
 
-    // interaction
-    "hover:scale-105 active:scale-95",
-    "hover:text-[#E07A5F] active:text-[#E07A5F]",
+      // interaction
+      "hover:scale-105 active:scale-95",
+      "hover:text-[#E07A5F] active:text-[#E07A5F]",
 
-    // shadow logic
-    !className?.match(/shadow(-|$)/) && "shadow-xs hover:shadow-sm",
+      // shadow logic
+      !className?.match(/shadow(-|$)/) && "shadow-xs hover:shadow-sm",
 
-    className
-  )
-);
+      className
+    )
+  );
 
   const content = (
-    <span className="flex items-center gap-2 md:gap-2.5">
-      {leftIcon}
-      {children || text}
-      {rightIcon}
+    <span className="relative z-10 flex items-center">
+      {leftIcon && <span className="mr-2 flex items-center">{leftIcon}</span>}
+
+      <span>{children || text}</span>
+
+      {rightIcon && <span className="ml-2 flex items-center">{rightIcon}</span>}
     </span>
   );
 
