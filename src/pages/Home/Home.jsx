@@ -45,7 +45,7 @@ const Home = () => {
             <PinterestExclusive />
 
             {/* trending categories button */}
-            <div className=" pt-10 md:pt-14 lg:pt-20">
+            <div>
                 <Container>
                     <div className="space-y-4">
                         <div className="space-y-2.5">

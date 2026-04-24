@@ -22,7 +22,7 @@ export default function SoundButton({
       "relative inline-flex items-center justify-center capitalize",
 
       // ✅ FIXED RESPONSIVE SIZE
-      "py-2.5 md:py-3 px-5 md:px-6 rounded-full font-medium",
+      "rounded-full font-medium",
       "text-sm md:text-base",
 
       // ✅ SMOOTH UX
@@ -34,11 +34,10 @@ export default function SoundButton({
 
       // ✅ DEFAULT STYLE
       !className?.includes("bg-") &&
-        "bg-gradient-to-r from-orange-400 to-red-500 text-white",
+      "bg-gradient-to-r from-orange-400 to-red-500 text-white",
 
-      // ✅ BETTER GAP CONTROL
-      !className?.includes("gap-") &&
-        "gap-2.5 md:gap-3",
+      !className?.includes("py-") &&
+      "py-2.5 md:py-3 px-5 md:px-6",
 
       className
     )
@@ -69,10 +68,12 @@ export default function SoundButton({
       <span className={animationBgTwoStyles}></span>
 
       {/* 🎯 Content */}
-      <span className="relative z-10 flex items-center gap-2.5 md:gap-3">
-        {leftIcon}
-        {children || text}
-        {rightIcon}
+      <span className="relative z-10 flex items-center">
+        {leftIcon && <span className="mr-2 flex items-center">{leftIcon}</span>}
+
+        <span>{children || text}</span>
+
+        {rightIcon && <span className="ml-2 flex items-center">{rightIcon}</span>}
       </span>
     </>
   );
