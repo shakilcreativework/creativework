@@ -10,6 +10,7 @@
 // https://i.ibb.co.com/XxrKRJpC/golden-crown-icons-set-of-royalty-luxury-design-vector-for-perfect-graphics-elements-10.jpg
 // https://i.ibb.co.com/rR6PvgCw/golden-crown-icons-set-of-royalty-luxury-design-vector-for-perfect-graphics-elements-9.jpg
 
+import { SiWpexplorer } from "react-icons/si";
 import MagneticButton from "../../shared/buttons/MagneticWrapper";
 import SoundButton from "../../shared/buttons/SoundButton";
 import { FaLock } from "react-icons/fa";
@@ -17,7 +18,7 @@ import { FaLock } from "react-icons/fa";
 
 const IconCard = ({ image }) => {
     return (
-        <div className="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
+        <div className="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs hover:shadow-sm transition-all">
 
             {/* Image */}
             <div className="overflow-hidden">
@@ -43,7 +44,7 @@ const IconCard = ({ image }) => {
                 {/* cta btn */}
 
                 <div className="flex justify-center items-center mx-auto">
-                    <SoundButton children="Unlock Full Design" leftIcon={<FaLock />} className={'w-full'} />
+                    <SoundButton children="Unlock Full Design" leftIcon={<FaLock />} />
                 </div>
             </div>
         </div>

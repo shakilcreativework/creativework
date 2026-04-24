@@ -3,6 +3,7 @@ import SpecialTag from '../SpecialTag/SpecialTag';
 import MagneticButton from '../../shared/buttons/MagneticWrapper';
 import SoundButton from '../../shared/buttons/SoundButton';
 import { ArrowDownToLine } from '@gravity-ui/icons';
+import { FaFileImage } from 'react-icons/fa';
 
 // https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg
 // https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg
@@ -19,7 +20,7 @@ const Card = ({ image, type }) => {
 
     return (
         <div>
-            <div className="group bg-white rounded-xl shadow-xs overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+            <div className="group bg-white border border-gray-100 rounded-xl shadow-xs overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1">
 
                 <div className="relative">
                     {/* <span className="absolute top-3 left-3 text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full z-10">
@@ -40,14 +41,14 @@ const Card = ({ image, type }) => {
                 </div>
 
                 <div className="px-4">
-                    <h3 className="text-[#1F1B16] text-sm dm-serif font-medium line-clamp-1">
+                    <h3 className="text-[#1F1B16] text-sm md:text-base plus-jakarta font-semibold line-clamp-1">
                         Curated design resources, aesthetic backgrounds, and premium mockups for creators.
                     </h3>
                     {/* <span className="text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full shadow-sm">
                         Branding
                     </span> */}
                     <div className='flex justify-center pt-3 pb-5'>
-                        <SoundButton animationBgOne={'animate-ping'} leftIcon={<ArrowDownToLine />} className={'py-2 px-4'} text={'Download Free'} />
+                        <SoundButton animationBgOne={'animate-ping'} leftIcon={<FaFileImage />} className={'py-2 px-4'} text={'Discover Full Concept'} />
                     </div>
                 
                 </div>

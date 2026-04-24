@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 export default function SoundButton({
   children,
   text,
+  mobileText,
+  tabletText,
+  desktopText,
   className,
   to,
   href,
@@ -68,12 +71,41 @@ export default function SoundButton({
       <span className={animationBgTwoStyles}></span>
 
       {/* 🎯 Content */}
-      <span className="relative z-10 flex items-center">
-        {leftIcon && <span className="mr-2 flex items-center">{leftIcon}</span>}
+      <span className="relative z-10 flex items-center gap-2">
 
-        <span>{children || text}</span>
+        {/* LEFT ICON (always visible) */}
+        {leftIcon && (
+          <span className="flex items-center shrink-0">
+            {leftIcon}
+          </span>
+        )}
 
-        {rightIcon && <span className="ml-2 flex items-center">{rightIcon}</span>}
+        {/* RESPONSIVE TEXT */}
+        <span className="flex items-center">
+          {mobileText || tabletText || desktopText ? (
+            <>
+              <span className="sm:hidden">
+                {mobileText || text}
+              </span>
+              <span className="hidden sm:inline md:hidden">
+                {tabletText || text}
+              </span>
+              <span className="hidden md:inline">
+                {desktopText || text}
+              </span>
+            </>
+          ) : (
+            children || text
+          )}
+        </span>
+
+        {/* RIGHT ICON (always visible) */}
+        {rightIcon && (
+          <span className="flex items-center shrink-0">
+            {rightIcon}
+          </span>
+        )}
+
       </span>
     </>
   );
