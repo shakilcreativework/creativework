@@ -12,6 +12,8 @@ import TrendingCard from "../../components/TrendingCard/TrendingCard";
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import DontLeave from "../../components/DontLeave/DontLeave";
 import DesignersChoose from "../../components/DesignersChoose/DesignersChoose";
+import { BsFire } from "react-icons/bs";
+
 
 
 // https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg
@@ -46,9 +48,14 @@ const Home = () => {
             <div className=" pt-10 md:pt-14 lg:pt-20">
                 <Container>
                     <div className="space-y-4">
-                        <h3 className="text-[#2a2622] text-base md:text-lg lg:text-xl xl:text-2xl dm-serif">
-                            Trending Designs
-                        </h3>
+                        <div className="space-y-2.5">
+                            <h1 className="mt-4 flex justify-start items-center gap-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1F1B16] plus-jakarta font-extrabold">
+                                <BsFire className="text-4xl md:text-5xl text-orange-500 drop-shadow-[0_2px_6px_rgba(255,115,0,0.5)]" />
+                                Trending Vector Designs
+                            </h1>
+                            <p className="text-base lg:text-lg text-[#62748e] font-normal">Most downloaded this week.</p>
+                        </div>
+
 
                         <div className="bg-white shadow-xs p-2 rounded-sm">
                             <div className="flex gap-3 overflow-x-auto whitespace-nowrap no-scrollbar scroll-smooth">
