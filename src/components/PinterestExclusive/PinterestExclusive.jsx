@@ -18,7 +18,7 @@ import IconCard from '../IconCard/IconCard';
 
 const PinterestExclusive = () => {
     return (
-        <div className='py-10 md:py-16 lg:py-20'>
+        <div className='py-20'>
             <Container>
                 <div className='text-center'>
                     <div className='space-y-3'>

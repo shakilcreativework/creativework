@@ -43,8 +43,8 @@ const IconCard = ({ image }) => {
                 </div>
                 {/* cta btn */}
 
-                <div className="flex justify-center items-center mx-auto">
-                    <SoundButton children="Unlock Full Design" leftIcon={<FaLock />} />
+                <div className="flex justify-center items-center mx-auto mt-5">
+                    <SoundButton children="Unlock Full Design" className={'py-2 px-4 w-full'} leftIcon={<FaLock />} />
                 </div>
             </div>
         </div>

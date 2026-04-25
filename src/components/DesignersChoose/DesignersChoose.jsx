@@ -9,7 +9,7 @@ import { SlBadge } from "react-icons/sl";
 const DesignersChoose = () => {
 
     return (
-        <div className='py-10 md:py-16 lg:py-20'>
+        <div className='py-20'>
             <Container>
                 <div>
                     <h1 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#1F1B16] plus-jakarta font-extrabold">

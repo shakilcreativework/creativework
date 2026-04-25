@@ -47,8 +47,8 @@ const Card = ({ image, type }) => {
                     {/* <span className="text-xs bg-[#FAF8F5] text-[#6F665C] px-3 py-1 rounded-full shadow-sm">
                         Branding
                     </span> */}
-                    <div className='flex justify-center pt-3 pb-5'>
-                        <SoundButton animationBgOne={'animate-ping'} leftIcon={<FaFileImage />} className={'py-2 px-4'} text={'Discover Full Concept'} />
+                    <div className='flex justify-center pt-4 pb-5'>
+                        <SoundButton animationBgOne={'animate-ping'} leftIcon={<FaFileImage />} className={'py-2 px-4 w-full'} text={'Discover Full Concept'} />
                     </div>
                 
                 </div>
