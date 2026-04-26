@@ -11,6 +11,7 @@ import DontLeave from "../../components/DontLeave/DontLeave";
 import DesignersChoose from "../../components/DesignersChoose/DesignersChoose";
 import { BsFire } from "react-icons/bs";
 import TrendingPost from "../../components/TrendingPost/TrendingPost";
+import FreeBundle from "../../components/FreeBundle/FreeBundle";
 
 
 
@@ -38,6 +39,9 @@ const Home = () => {
 
             {/* trending categories button */}
             <TrendingPost />
+
+            {/* free bundle */}
+            <FreeBundle />
 
             {/* why designers choose */}
             <DesignersChoose />
