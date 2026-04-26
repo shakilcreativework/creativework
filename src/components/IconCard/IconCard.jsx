@@ -13,6 +13,7 @@
 import { SiWpexplorer } from "react-icons/si";
 import MagneticButton from "../../shared/buttons/MagneticWrapper";
 import SoundButton from "../../shared/buttons/SoundButton";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const IconCard = ({ image }) => {
@@ -43,7 +44,7 @@ const IconCard = ({ image }) => {
                 {/* cta btn */}
 
                 <div className="flex justify-center items-center mx-auto mt-5">
-                    <SoundButton children="Unlock Free Version →" className={'py-2 px-4 w-full'} />
+                    <SoundButton children="Unlock Free Version" rightIcon={<FaArrowRightLong />} className={'py-2 px-4 w-full'} />
                 </div>
             </div>
         </div>

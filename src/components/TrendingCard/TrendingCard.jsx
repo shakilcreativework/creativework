@@ -1,11 +1,13 @@
+
 import MagneticButton from "../../shared/buttons/MagneticWrapper";
 import SoundButton from "../../shared/buttons/SoundButton";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const TrendingCard = ({ image, value, resoures }) => {
     const valueStyles = {
         popular: "text-yellow-500 bg-yellow-100",
         trending: "text-orange-500 bg-orange-100",
-        new: "text-blue-500 bg-blue-100",
+        new: "text-amber-600 bg-amber-100",
     };
 
     const resourceStyles = {
@@ -39,7 +41,7 @@ const TrendingCard = ({ image, value, resoures }) => {
                 </span>
             </div>
             <div className="mt-4">
-                <MagneticButton children={'See Full Design →'} className={'w-full bg-black text-white/80 group-hover:text-white font-semibold'} />
+                <MagneticButton children={'See Full Design'} rightIcon={<FaArrowRightLong />} className={`w-full bg-black text-white/80 group-hover:text-white  font-semibold`} />
             </div>
         </div>
     );

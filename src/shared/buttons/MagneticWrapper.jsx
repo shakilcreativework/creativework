@@ -62,7 +62,7 @@ export default function MagneticButton({
 
       // interaction
       "hover:scale-105 active:scale-95",
-      "hover:text-[#E07A5F]",
+      // "hover:text-[#E07A5F]",
 
       // shadow logic
       !className?.match(/shadow(-|$)/) && "shadow-xs hover:shadow-sm",
