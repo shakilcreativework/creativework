@@ -17,7 +17,7 @@ const FreeBundle = () => {
                         <SoundButton leftIcon={<GrDownload />} text={"Download Bundle Now"} to={'/branding'} as="link" />
                     </div>
                     <div>
-                        <img className="w-full h-full object-cover" src="https://i.ibb.co.com/sdsSMJhH/animal-bundle.jpg" alt="" />
+                        <img className="w-full h-75 sm:h-62.5 lg:h-full object-cover" src="https://i.ibb.co.com/sdsSMJhH/animal-bundle.jpg" alt="" />
                     </div>
                 </div>
             </Container>
