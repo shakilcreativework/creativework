@@ -4,12 +4,9 @@ import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import Container from "../../shared/Container/Container";
 import AppContexts from "../../context/AppContexts";
 import Banner from "../../components/Banner/Banner";
-import Card from "../../components/Card/Card";
 import PinterestExclusive from "../../components/PinterestExclusive/PinterestExclusive";
 import DesignCard from "../../components/DesignCard/DesignCard";
 import FreeCard from "../../components/FreeCard/FreeCard";
-import TrendingCard from "../../components/TrendingCard/TrendingCard";
-import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import DontLeave from "../../components/DontLeave/DontLeave";
 import DesignersChoose from "../../components/DesignersChoose/DesignersChoose";
 import { BsFire } from "react-icons/bs";
@@ -41,7 +38,7 @@ const Home = () => {
 
             {/* trending categories button */}
             <TrendingPost />
-            
+
             {/* why designers choose */}
             <DesignersChoose />
 

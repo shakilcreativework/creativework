@@ -2,8 +2,8 @@ import { useContext, useState } from "react";
 import AppContexts from "../../context/AppContexts";
 import Container from "../../shared/Container/Container";
 import { BsFire } from "react-icons/bs";
-import Card from "../Card/Card";
 import MagneticButton from "../../shared/buttons/MagneticWrapper";
+import TrendingCard from "../TrendingCard/TrendingCard";
 
 const TrendingPost = () => {
     const { categories } = useContext(AppContexts);
@@ -41,7 +41,7 @@ const TrendingPost = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 mt-10">
-                    <Card image={'https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg'} />
+                    {/* <Card image={'https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg'} />
                     <Card image={'https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg'} />
                     <Card image={'https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg'} />
                     <Card image={'https://i.ibb.co.com/JFxkNL41/Resources-silhouette-4.jpg'} />
@@ -49,7 +49,14 @@ const TrendingPost = () => {
                     <Card image={'https://i.ibb.co.com/Xk2h48S4/Resources-silhouette-6.jpg'} />
                     <Card image={'https://i.ibb.co.com/p6phxq9d/Resources-silhouette-7.jpg'} />
                     <Card image={'https://i.ibb.co.com/qMHM2BgN/Resources-silhouette-8.jpg'} />
-                    <Card image={'https://i.ibb.co.com/SbRjTCb/Resources-silhouette-9.jpg'} />
+                    <Card image={'https://i.ibb.co.com/SbRjTCb/Resources-silhouette-9.jpg'} /> */}
+                    <TrendingCard value={'popular'} resoures={'free'} image={'https://i.ibb.co.com/QFvw8JCY/Resources-silhouette-1.jpg'} />
+                    <TrendingCard value={'new'} resoures={'premium'} image={'https://i.ibb.co.com/tp0k7VpM/Resources-silhouette-2.jpg'} />
+                    <TrendingCard value={'trending'} resoures={'free'} image={'https://i.ibb.co.com/ynNMBm6F/Resources-silhouette-3.jpg'} />
+                    <TrendingCard value={'popular'} resoures={'free'} image={'https://i.ibb.co.com/p6phxq9d/Resources-silhouette-7.jpg'} />
+                    <TrendingCard value={'trending'} resoures={'premium'} image={'https://i.ibb.co.com/Xk2h48S4/Resources-silhouette-6.jpg'} />
+                    <TrendingCard value={'new'} resoures={'free'} image={'https://i.ibb.co.com/qMHM2BgN/Resources-silhouette-8.jpg'} />
+                    <TrendingCard value={'popular'} resoures={'premium'} image={'https://i.ibb.co.com/SbRjTCb/Resources-silhouette-9.jpg'} />
                 </div>
             </Container>
         </div>

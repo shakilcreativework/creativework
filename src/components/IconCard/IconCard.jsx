@@ -13,7 +13,6 @@
 import { SiWpexplorer } from "react-icons/si";
 import MagneticButton from "../../shared/buttons/MagneticWrapper";
 import SoundButton from "../../shared/buttons/SoundButton";
-import { FaLock } from "react-icons/fa";
 
 
 const IconCard = ({ image }) => {
@@ -44,7 +43,7 @@ const IconCard = ({ image }) => {
                 {/* cta btn */}
 
                 <div className="flex justify-center items-center mx-auto mt-5">
-                    <SoundButton children="Unlock Full Design" className={'py-2 px-4 w-full'} leftIcon={<FaLock />} />
+                    <SoundButton children="Unlock Free Version →" className={'py-2 px-4 w-full'} />
                 </div>
             </div>
         </div>
