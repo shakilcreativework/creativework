@@ -42,14 +42,14 @@ const TrendingCard = ({ image, value, resoures }) => {
                 </span>
                 {resoures.toLowerCase() === 'free' ? (
                     <span className="absolute bottom-3 w-full text-center z-20 animate-pulse">
-                        <span className="flex items-center justify-center gap-1.5 text-sm font-medium text-green-600 bg-green-50 w-fit mx-auto py-1 px-3 rounded-full shadow-sm">
+                        <span className="flex items-center justify-center gap-1.5 text-xs font-medium text-green-600 bg-green-50 w-fit mx-auto py-1 px-3 rounded-full shadow-sm">
                             <Gift />
                             Free • Clean EPS Included
                         </span>
                     </span>)
                     :
                     (<span className="absolute bottom-3 w-full text-center z-20 animate-pulse">
-                        <span className="flex items-center justify-center gap-1.5 text-sm font-medium text-purple-500 bg-purple-50 w-fit mx-auto py-1 px-3 rounded-full shadow-sm">
+                        <span className="flex items-center justify-center gap-1.5 text-xs font-medium text-purple-500 bg-purple-50 w-fit mx-auto py-1 px-3 rounded-full shadow-sm">
                             <Gift />
                             Premium Pack • Clean EPS Ready
                         </span>

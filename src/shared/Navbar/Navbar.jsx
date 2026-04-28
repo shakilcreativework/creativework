@@ -109,7 +109,7 @@ const Navbar = () => {
                                         <PiShoppingCart className="text-2xl text-gray-700" />
 
                                         {/* Badge */}
-                                        <span className="absolute -top-3 -right-2 w-5 h-5 bg-red-600 text-white flex justify-center items-center rounded-full text-[10px] font-bold">10</span>
+                                        <span className="absolute -top-3 -right-2 w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full text-[8px] font-bold">10</span>
                                     </div>
                                     <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
                                 </div>
@@ -130,7 +130,7 @@ const Navbar = () => {
                                         <PiShoppingCart className="text-2xl text-gray-700" />
 
                                         {/* Badge */}
-                                        <span className="absolute -top-3 -right-2 w-5 h-5 bg-red-600 text-white flex justify-center items-center rounded-full text-[10px] font-bold">10</span>
+                                        <span className="absolute -top-3 -right-2 w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full text-[8px] font-bold">10</span>
                                     </div>
                                     <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
                                 </div>
