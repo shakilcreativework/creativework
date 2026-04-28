@@ -3,8 +3,12 @@ import MagneticButton from "../../shared/buttons/MagneticWrapper";
 import SoundButton from "../../shared/buttons/SoundButton";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Gift } from '@gravity-ui/icons';
+import { FaCrown } from "react-icons/fa";
+import { IoMdTrendingUp } from "react-icons/io";
+import { BsFire } from "react-icons/bs";
+import { TiCloudStorage } from "react-icons/ti";
 
-const TrendingCard = ({ image, value, resoures }) => {
+const TrendingCard = ({ image, value, resoures}) => {
     const valueStyles = {
         popular: "text-yellow-500 bg-yellow-100",
         trending: "text-orange-500 bg-orange-100",
@@ -27,7 +31,8 @@ const TrendingCard = ({ image, value, resoures }) => {
 
                 <span className="absolute top-3 left-3 capitalize">
                     {value && valueStyles[value.toLowerCase()] && (
-                        <span className={`py-1 px-3 rounded-full text-xs font-semibold animate-pulse ${valueStyles[value.toLowerCase()]}`}>
+                        <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold animate-pulse ${valueStyles[value.toLowerCase()]}`}>
+                            {value.toLowerCase() === 'trending' ? <IoMdTrendingUp className="w-4 h-4" /> : value.toLowerCase() === 'popular' ? <BsFire className="w-4 h-4" /> :  <TiCloudStorage className="w-4 h-4" />}
                             {value}
                         </span>
                     )}
@@ -35,7 +40,10 @@ const TrendingCard = ({ image, value, resoures }) => {
 
                 <span className="absolute top-3 right-3 capitalize">
                     {resoures && resourceStyles[resoures.toLowerCase()] && (
-                        <span className={`py-1 px-3 rounded-full text-xs font-semibold animate-pulse ${resourceStyles[resoures.toLowerCase()]}`}>
+                        <span
+                            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold animate-pulse ${resourceStyles[resoures.toLowerCase()]}`}
+                        >
+                            {resoures.toLowerCase() === 'free' ? <Gift className="w-4 h-4" /> : <FaCrown className="w-4 h-4" />}
                             {resoures}
                         </span>
                     )}
