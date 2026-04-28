@@ -12,7 +12,7 @@ const DontLeave = () => {
             <Container>
                 <div className=" rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden">
 
-                    <div className=" bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url('https://i.ibb.co.com/W45FYjjF/arts-51.jpg')] bg-cover bg-center h-120 sm:h-100 md:h-108.75 w-full">
+                    <div className=" bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url('https://i.ibb.co.com/RkjJPWMM/arts-43.jpg')] bg-cover bg-center h-120 sm:h-100 md:h-108.75 w-full">
                         <div className=" h-full text-center flex flex-col justify-center items-center space-y-3">
                             {/* <IoGiftOutline className="hidden sm:inline text-6xl text-white" /> */}
                             <img src="https://i.ibb.co.com/dwMysmgg/shopping-cart-1.png" className='hidden sm:inline sm:w-32 lg:w-16' alt="Shoping Gift" />
