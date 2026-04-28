@@ -9,7 +9,7 @@ import { GrDownload } from "react-icons/gr";
 const DontLeave = () => {
     return (
         <div className="my-20">
-            <Container className={'max-w-5xl'}>
+            <Container>
                 <div className=" rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden">
 
                     <div className=" bg-[linear-gradient(to_right,rgba(0,0,0,0.75),rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url('https://i.ibb.co.com/W45FYjjF/arts-51.jpg')] bg-cover bg-center h-120 sm:h-100 md:h-108.75 w-full">
@@ -20,7 +20,7 @@ const DontLeave = () => {
                                 <div>
                                     <img src="https://i.ibb.co.com/YBrX64Y6/gift.png" className='w-20 sm:w-10 lg:w-15' alt="Gift Box" />
                                 </div>
-                                <h1 className=" plus-jakarta text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-extrabold">Don't Leave Empty-Handed</h1>
+                                <h1 className=" plus-jakarta text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-extrabold">Get Free Designs Before You Leave</h1>
 
                             </div>
                             <p className="text-base lg:text-lg text-white font-normal">Download free designs and explore our premium collections — all in one click.</p>

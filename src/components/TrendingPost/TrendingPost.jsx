@@ -19,7 +19,7 @@ const TrendingPost = () => {
             <Container>
                 <div className="space-y-4">
                     <div className="space-y-2.5">
-                        <h1 className="mt-4 flex justify-start items-center gap-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1F1B16] plus-jakarta font-extrabold">
+                        <h1 className="mt-4 flex justify-start items-center gap-1.5 sm:gap-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1F1B16] plus-jakarta font-extrabold">
                             <BsFire className="text-4xl md:text-5xl text-orange-500 drop-shadow-[0_2px_6px_rgba(255,115,0,0.5)]" />
                             Trending Vector Designs
                         </h1>
