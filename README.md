@@ -154,8 +154,8 @@ npm run dev
 
 ## 🤝 Connect With Me
 
-* 💼 LinkedIn: (add your link)
-* 🐙 GitHub: (add your profile)
+* 💼 LinkedIn: [profile](https://www.linkedin.com/in/md-shakil-ahmed-3702533b4)
+* 🐙 GitHub: [profile](https://github.com/shakilcreativework)
 
 ---
 
