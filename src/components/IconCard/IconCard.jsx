@@ -14,6 +14,8 @@ import { SiWpexplorer } from "react-icons/si";
 import MagneticButton from "../../shared/buttons/MagneticWrapper";
 import SoundButton from "../../shared/buttons/SoundButton";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Gift } from '@gravity-ui/icons';
+import { FaCrown } from "react-icons/fa";
 
 
 const IconCard = ({ image }) => {
@@ -30,7 +32,7 @@ const IconCard = ({ image }) => {
             </div>
 
             {/* Content */}
-            <div className="p-4 md:p-5 space-y-3">
+            <div className="p-4 md:p-5 space-y-4">
 
                 <h3 className="line-clamp-2 plus-jakarta font-semibold text-sm text-[#1F1B16]">
                     Running Ferret Black Line Animal Illustration White Background
@@ -38,8 +40,16 @@ const IconCard = ({ image }) => {
 
                 {/* badge Bottom row */}
                 <div className="flex items-center justify-between">
-                    <MagneticButton className="bg-[#E07A5F]/10 text-[#E07A5F] px-3 py-1 rounded-full text-xs font-semibold plus-jakarta" text={'Icons'} />
-                    <MagneticButton className="bg-green-200 text-green-400 px-3 py-1 rounded-full text-xs font-semibold hover:text-green-400 plus-jakarta" text={'Free'} />
+                    <span
+                        className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold text-purple-500 bg-purple-50 animate-pulse`}
+                    >
+                        <FaCrown /> Icons
+                    </span>
+                    <span
+                        className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold text-green-500 bg-green-100 animate-pulse`}
+                    >
+                        <Gift /> Free
+                    </span>
                 </div>
                 {/* cta btn */}
 
