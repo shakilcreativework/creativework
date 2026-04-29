@@ -12,6 +12,8 @@ import DesignersChoose from "../../components/DesignersChoose/DesignersChoose";
 import { BsFire } from "react-icons/bs";
 import TrendingPost from "../../components/TrendingPost/TrendingPost";
 import FreeBundle from "../../components/FreeBundle/FreeBundle";
+// import Projects from "../../components/Projects/Projects";
+// import GithubStats from "../../components/GithubStats/GithubStats";
 
 
 
@@ -50,6 +52,11 @@ const Home = () => {
             <div>
                 <DontLeave />
             </div>
+
+            {/* testing portfolio project card live preview */}
+            {/* <Projects />
+
+            <GithubStats /> */}
         </div>
     );
 };
