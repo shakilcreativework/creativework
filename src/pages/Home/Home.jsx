@@ -12,6 +12,8 @@ import DesignersChoose from "../../components/DesignersChoose/DesignersChoose";
 import { BsFire } from "react-icons/bs";
 import TrendingPost from "../../components/TrendingPost/TrendingPost";
 import FreeBundle from "../../components/FreeBundle/FreeBundle";
+import Button from "../../shared/buttons/Button";
+import { GrDownload } from "react-icons/gr";
 
 
 
@@ -50,6 +52,21 @@ const Home = () => {
             <div>
                 <DontLeave />
             </div>
+
+            {/* button testing */}
+            <Container>
+                <div className="flex flex-wrap gap-2 justify-center items-center">
+                    <Button children={'Get Free Designs'} leftIcon={<GrDownload />} size="lg" animated animatedSpanOne={'animate-pulse'} />
+                    <div>
+
+                    <Button children={'Get Free Designs'} leftIcon={<GrDownload />} size="sm" animated animatedSpanOne={'animate-spin'} />
+                    </div>
+                    <div>
+
+                    <Button children={'Get Free Designs'} leftIcon={<GrDownload />} size="md" animated className={'animate-bounce'} />
+                    </div>
+                </div>
+            </Container>
         </div>
     );
 };

@@ -44,9 +44,9 @@ const Navbar = () => {
 
     return (
         // ✅ CHANGE 1
-        <div className="bg-[#FAF8F5CC] backdrop-blur-md sticky top-0 py-4 z-50 shadow-xs">
+        <div className="bg-[#FAF8F5CC] backdrop-blur-md sticky top-0 py-3 z-50 shadow-xs">
             {/* ✅ CHANGE 2 */}
-            <nav className="relative">
+            <nav>
                 <Container>
                     <div className="flex justify-between items-center w-full">
 
@@ -132,7 +132,7 @@ const Navbar = () => {
                                         {/* Badge */}
                                         <span className="absolute -top-3 -right-2 w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full text-[8px] font-bold">10</span>
                                     </div>
-                                    <SoundButton leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
+                                    <SoundButton className={'py-1.5 px-4'} leftIcon={<CiGift className="text-2xl" />} text={'free designs'} />
                                 </div>
                             </div>
 

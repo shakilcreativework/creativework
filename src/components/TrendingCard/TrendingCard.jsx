@@ -21,7 +21,7 @@ const TrendingCard = ({ image, value, resoures}) => {
     };
 
     return (
-        <div className="group border border-gray-100 p-5 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+        <div className={`group border border-gray-200 p-5 rounded-xl transition-all duration-300 hover:-translate-y-2  shadow-xs hover:shadow-lg`}>
             <div className="relative bg-white overflow-hidden rounded-lg">
                 <img
                     className="rounded-lg shadow-sm transition-transform duration-500 group-hover:scale-105"
