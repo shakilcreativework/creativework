@@ -1,5 +1,4 @@
 
-import { useContext } from "react";
 import MagneticWrapper from "../../shared/buttons/MagneticWrapper";
 import Container from "../../shared/Container/Container";
 import AppContexts from "../../context/AppContexts";
@@ -28,8 +27,6 @@ import { GrDownload } from "react-icons/gr";
 // https://i.ibb.co.com/SbRjTCb/Resources-silhouette-9.jpg
 
 const Home = () => {
-    const { posts } = useContext(AppContexts);
-    console.log('from home', posts);
 
     return (
         <div>
@@ -52,21 +49,6 @@ const Home = () => {
             <div>
                 <DontLeave />
             </div>
-
-            {/* button testing */}
-            <Container>
-                <div className="flex flex-wrap gap-2 justify-center items-center">
-                    <Button children={'Get Free Designs'} leftIcon={<GrDownload />} size="lg" animated animatedSpanOne={'animate-pulse'} />
-                    <div>
-
-                    <Button children={'Get Free Designs'} leftIcon={<GrDownload />} size="sm" animated animatedSpanOne={'animate-spin'} />
-                    </div>
-                    <div>
-
-                    <Button children={'Get Free Designs'} leftIcon={<GrDownload />} size="md" animated className={'animate-bounce'} />
-                    </div>
-                </div>
-            </Container>
         </div>
     );
 };
